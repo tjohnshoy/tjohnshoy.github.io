@@ -2,6 +2,9 @@
     .inline-block   {
         display: inline-block;
         vertical-align: top;
+        letter-spacing: 1px;
+        padding: 0px 10px 0px 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .logo   {
@@ -18,7 +21,6 @@
     .ul {
         width: 50%;
         margin-left: auto;
-
     }
     
     .heroImg    {
@@ -34,6 +36,5 @@
 
     .footer {
         background-color: #373738;
-        padding-left: auto;
-        padding-right: auto;
+        justify-content: center;
     }
