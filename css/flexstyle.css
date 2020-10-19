@@ -1,0 +1,42 @@
+.center   {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0F1626;
+}
+.flexcontainer  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    max-width: 950px;
+    padding-bottom: 70px;
+}
+.skill1 {
+    width: 33%;
+    padding:0px 20px 0px 20px;
+    margin:10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    min-height: 515px;
+    box-shadow: 3px 3px 3px #e6e6e6;
+}
+.title  {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.subTitle   {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.placeholder    {
+    display: flex;
+    padding: 15px 0px 15px 0px;
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.icon    {
+ width: 250px;
+}

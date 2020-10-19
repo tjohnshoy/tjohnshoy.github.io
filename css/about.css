@@ -1,0 +1,21 @@
+.heroImg    {
+    height: 100px;
+    padding: 25px;
+    margin: 0 auto
+}
+.content    {
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    min-height: 100%;
+}
+ .button {
+    background-color:#18233E;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    width: 160px;
+    cursor: pointer;
+    }
