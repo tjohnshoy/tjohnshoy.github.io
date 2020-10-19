@@ -62,3 +62,8 @@
         font-size: 25px;
         text-align: center;
     }
+    .linkstyle  {
+        text-decoration: none;
+        color: #0F1626;
+        cursor: pointer;
+    }
