@@ -35,3 +35,23 @@
     font-size: 20px;
     margin: 0px 0px 0px 0px;
 }
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 75px;
+    right: 323px;
+    background-image: url("../images/chevron-up-solid.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-color: transparent;
+    width: 50px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: #18233E;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
