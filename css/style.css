@@ -21,6 +21,8 @@
     .logo   {
         width: 15%;
         padding: 0px 55px 0px 0px;
+        border-bottom: none;
+        text-decoration: none;
     }
     .navigation    {
         display: flex;
