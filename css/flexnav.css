@@ -1,0 +1,17 @@
+.flexcontainer  {
+    display: flex;
+    flex-direction: row;
+    max-width: 950px;
+    justify-content: flex-start;
+}
+.logo   {
+    flex: 10%;
+
+}
+.navMenu    {
+    flex: 90%;
+}
+.center    {
+    display: flex;
+    justify-content: center;
+}
