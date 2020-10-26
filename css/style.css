@@ -28,7 +28,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-top: 15px;
+        margin-top: 30px;
     }
     .inline-block a:hover {
         border-bottom: 4px solid #FF533D;
@@ -68,4 +68,18 @@
         text-decoration: none;
         color: #0F1626;
         cursor: pointer;
+    }
+    .standardButton {
+        background-color:#18233E;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 7px;
+        width: 5%;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px #cecece;
+        margin-bottom: 80px;
+        text-decoration: underline;
+        text-decoration-color: #18233e;
+    
     }
