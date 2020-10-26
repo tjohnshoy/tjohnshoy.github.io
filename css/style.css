@@ -71,15 +71,30 @@
     }
     .standardButton {
         background-color:#18233E;
-        border: none;
+        border-color:#18233E;
+        border-radius: 5px;
+        border-width: 2px;
+        border-style: solid;
         border-radius: 5px;
         color: white;
         padding: 7px;
-        width: 5%;
+        width: 120px;
         cursor: pointer;
         box-shadow: 3px 3px 3px #cecece;
         margin-bottom: 80px;
         text-decoration: underline;
         text-decoration-color: #18233e;
-    
+    }
+    .secondaryButton {
+        border-color:#18233E;
+        border-radius: 5px;
+        border-width: 2px;
+        border-style: solid;
+        color: #18233e;
+        padding: 7px 11px 7px 11px;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px #cecece;
+        margin-bottom: 80px;
+        text-decoration: underline;
+        text-decoration-color: white;
     }
