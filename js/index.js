@@ -6,3 +6,4 @@ $("#myBtn").on("click", function(){
 $("#myBtn").on("click", function(){
     console.log("You clicked on #myID");
 })
+

@@ -6,15 +6,40 @@
     <title>Home</title>
     <link href="css\style.css" rel="stylesheet" type="text/css">
     <link href="css\homeflex.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body>  
+
+<nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      </ul>
+    </div>
+  </nav>
     <header class="navigation">
         <div class="inline-block logo">
             <img src=images\logo.png width="60px">
         </div>
         <nav class="inline-block">
-            <ul>
+            <ul class="topMenu">
                 <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
                 <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
                 <li class="inline-block"><a href="https://tjohnshoy.github.io/myWork.html" class="hover">work</a></li>
@@ -23,35 +48,30 @@
         </nav>
         <button id="myBtn" title="Go to top" style="display: block;"></button>
     </header>
-    <div class="center">
+    <div class="center homeGrid">
         <section class="flexcontainer">
             <div class=skill1>
                 <div class="subTitle">Tena Johnshoy Barasa
                         <p class="bodyContent">UX | UI Designer</p>
                 </div>
-                <div style="display: flex;"><p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="standardButton">View Resume</span></a></p>
-                    <div style="margin: 0px 0px 0px 15px;"><p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="secondaryButton">Contact Me</span></a></p></div>
-
+                <div class="buttons" style="display: flex;">
+                    <p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="standardButton">View Resume</span></a></p>
+                    <p><a style="margin: 0px 0px 0px 15px;" href="#contact"><span class="secondaryButton">Contact Me</span></a></p>
                 </div>
-    
             </div>
             <div class=placeholder>
                 <img src="images\undraw_design_feedback_dexe (1).png" class="placeholder">
-            </div>
-
-                
+            </div>                
         </section>
-
-            <footer class="footer">
+        <footer class="footer">
                     <ul class=ul>
                         <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
                         <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
                         <li class="inline-block"><a href="https://tjohnshoy.github.io/myWork.html" class="hover">work</a></li>
                         <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="hover">contact</a></li>
                     </ul>
-                </footer>
-     </section>
-    
+        </footer>   
+    </div> 
 </body>
 
 <script src= "https://code.jquery.com/jquery-3.3.1.min.js"></script> 

@@ -56,3 +56,62 @@
     padding: 10px;
     border-radius: 5px;
 }
+@media only screen and (max-width: 600px) {
+    .center   {
+        display: grid;
+        justify-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #0F1626;
+    }
+    .flexcontainer  {
+        display: grid;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+        max-width: 600px;
+    }
+    .homeGrid   {
+        display: grid;
+        padding: 0px 0px 0px 30px;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-areas: 
+        "skill1" 
+        "standardButton"
+        "secondaryButton"
+        "placeholder"
+        }
+    .subTitle   {
+            margin: 0px 10px 0px 0px;
+            font-size: 27px;
+        }
+    .standardButton {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .secondaryButton    {
+        display: inline-block;
+        width: 100%;
+        margin: 10px 0px 0px 10px;
+        text-align: center;
+    }
+    .placeholder    {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            padding-right: 30px;
+            max-width: 100%;
+            height: auto;
+        }
+    #myBtn {
+        visibility: hidden;
+    }
+    .bodyContent    {
+        font-size: 20px;
+        margin: 10px 0px 0px 0px;
+    }
+}
