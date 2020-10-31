@@ -17,6 +17,7 @@
         padding: 0px 10px 0px 30px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-bottom: 4px solid transparent;
+        text-decoration: none;
     }
     .logo   {
         width: 15%;
@@ -27,8 +28,10 @@
     .navigation    {
         display: flex;
         justify-content: center;
+        align-content: center;
         width: 100%;
         margin-top: 30px;
+        text-decoration: none;
     }
     .inline-block a:hover {
         border-bottom: 4px solid #FF533D;
@@ -36,11 +39,14 @@
       .inline-block a.active {
         border-bottom: 4px solid #FF533D;
     }
-    .ul {
+    .ul  {
         display: flex;
+        align-content: center;
         justify-content: center;
         color: #0F1626;
+        text-decoration: none;
     }
+
     .footer {
         background-color: #FF533D;
         position : absolute;
@@ -52,11 +58,11 @@
     }
     .active   {
         text-decoration: none;
-        color: #0F1626
+        color: #0F1626 !important
     }
     .hover   {
         text-decoration: none;
-        color: #0F1626
+        color: #0F1626 !important
     }
     h1  {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,7 +71,7 @@
     }
     .linkstyle  {
         text-decoration: none;
-        color: #0F1626;
+        color: #0F1626 !important; 
         cursor: pointer;
     }
     .standardButton {
@@ -104,14 +110,33 @@
          #menu   {
          display: none;
     } 
-    
-
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 75px;
+      right: 323px;
+      background-image: url("../images/chevron-up-solid.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-color: transparent;
+      width: 50px;
+      z-index: 99;
+      font-size: 15px;
+      border: none;
+      outline: none;
+      color: #18233E;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+    }
     @media only screen and (max-width: 600px) {
 
         .navigation    {
             display: grid;
             justify-content: right;
             padding: 0px 30px 0px 0px;
+            margin-top: 0px;
         }
         .inline-block   {
             display: grid;

@@ -1,0 +1,61 @@
+.container  {
+    max-width: 675px;
+    display: flex;
+    justify-content: center;
+
+}
+.heading   {
+    font-size: 50px;
+    line-height: 60px;
+}
+.bodyText   {
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 20px;
+}
+.rightBody   {
+    font-size: 17px;
+    line-height: 25px;
+    margin-left: 30px;
+}
+.hero   {
+    max-width: 80%;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.tagline    {
+    font-weight: bold;
+    line-height: 0px;
+}
+.designProcess  {
+    max-width: 675px;
+}
+.row    {
+    margin-top: 80px;
+    max-width: 675px;
+}
+.researchImg    {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.sectionHeading {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+.narrow {
+    margin-top: 0px;
+    max-width: 675px;
+}
+p   {
+    margin-bottom: 20px;
+
+}
+.sectionAnchor  {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+ 
