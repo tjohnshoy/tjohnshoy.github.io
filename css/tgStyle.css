@@ -10,12 +10,12 @@
 }
 .bodyText   {
     font-size: 17px;
-    line-height: 25px;
-    padding-top: 20px;
+    line-height: 28px;
+    vertical-align: top;
 }
 .rightBody   {
     font-size: 17px;
-    line-height: 25px;
+    line-height: 28px;
     margin-left: 30px;
 }
 .hero   {
@@ -25,13 +25,16 @@
 }
 .tagline    {
     font-weight: bold;
-    line-height: 0px;
+    line-height: 10px;
+    font-size: 25px;
+    padding: 0%;
+
 }
 .designProcess  {
     max-width: 675px;
 }
 .row    {
-    margin-top: 80px;
+    margin-top: 100px;
     max-width: 675px;
 }
 .researchImg    {
@@ -48,14 +51,18 @@
     margin-top: 0px;
     max-width: 675px;
 }
-p   {
-    margin-bottom: 20px;
 
-}
 .sectionAnchor  {
     font-size: 14px;
     text-align: center;
     padding-top: 20px;
     font-weight: bold;
 }
+.card-img-top   {
+    max-width: 100%;
+}
+.card   {
+    border: none;
+}
+
  
