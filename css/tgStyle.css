@@ -63,6 +63,7 @@
 }
 .card   {
     border: none;
+    max-width: 100%;
 }
 
  
