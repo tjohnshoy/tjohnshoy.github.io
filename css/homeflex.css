@@ -51,6 +51,8 @@
         flex-wrap: wrap;
         padding-bottom: 70px;
         max-width: 600px;
+        padding: 0px 0px 0px 30px;
+                justify-content: center;
     }
     .homeGrid   {
         display: grid;

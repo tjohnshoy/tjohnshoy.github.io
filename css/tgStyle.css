@@ -25,7 +25,7 @@
 }
 .tagline    {
     font-weight: bold;
-    line-height: 10px;
+    line-height: 25px;
     font-size: 25px;
     padding: 0%;
 
@@ -40,7 +40,6 @@
 .researchImg    {
     max-width: 90%;
     display: flex;
-    justify-content: center;
 }
 .sectionHeading {
     display: flex;
