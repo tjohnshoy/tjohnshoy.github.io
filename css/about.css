@@ -1,21 +1,64 @@
-.heroImg    {
-    height: 100px;
-    padding: 25px;
-    margin: 0 auto
+.heroSection    {
+    display: flex;
+    height: 200px;
+    padding: 20px 25px 0px 20px;
+    margin: 0 auto;
+    grid-area: "heroSection"
+
 }
-.content    {
-    width: 695px;
+.heroImg    {
+    display: flex;
+    height: 200px;
+    padding: 20px 25px 0px 0px;
+    margin: 0 auto;
+    grid-area: "heroSection"
+
+}
+.allContent    {
+    width: 650px;
     margin: 0 auto;
     padding-bottom: 25px;
     min-height: 100%;
+    padding-left: 0px;
 }
- .button {
-    background-color:#18233E;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 5px 10px 5px 10px;
-    width: 160px;
-    cursor: pointer;
+.content    {
+    display: flex;
+    grid-area: content;
+}
+.resume {
+    grid-area: resume;
+    padding: 30px 0px 0px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .heroSection    {
+        display: block;
+        grid-area: "heroSection"
     }
+    .content    {
+        display: block;
+        grid-area: content;
+    }
+    .resume {
+        display: grid;
+        justify-content: center;
+        grid-area: resume;
+        padding: 0px;
+        width: 100%;
+    }
+    .aboutGrid  {
+        display: grid;
+        max-width: 100%;
+        justify-content:start;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 200px 150px;
+        grid-template-areas: 
+        "heroSection"
+        "content"
+        "resume"
+    }
+    .allContent {
+        max-width: 100%;
+    }
+    
+}
