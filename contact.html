@@ -4,23 +4,88 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Work</title>
+        <link rel="shortcut icon" type="image/png" href="images\logo.png"/>
         <link href="css\style.css" rel="stylesheet" type="text/css">
+        <link href="css\contactstyle.css" rel="stylesheet" type="text/css">
     </head>
-        <header class="navigation">
-            <div class="logo">
-                <a href="https://tjohnshoy.github.io/index.html"><img src=images\logo.png style="border-bottom: none"; width="60px"></a>
+    <body>  
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <ul id="menu">
+                <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
+                <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
+                <a href="https://tjohnshoy.github.io/myWork.html"><li>Work</li></a>
+                <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+              </ul>
             </div>
-            <nav class="inline-block">
-                <ul>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
-                    <li class="inline-block"><a href="#myWork" class="hover">work</a></li>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="active">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <body>
-            
+          </nav>
+            <header class="navigation">
+                <div class="inline-block logo">
+                    <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.png ; width=60px></a>
+                </div>
+                <nav class="inline-block">
+                    <ul class="topMenu">
+                        <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
+                        <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
+                        <li class="inline-block"><a href="https://tjohnshoy.github.io/myWork.html" class="hover">work</a></li>
+                        <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="active">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                <script type="text/javascript">
+                function ValidateForm(frm) {
+                if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                return true; }
+                </script>
+
+                <h1 style="max-width: 700px; margin-left: auto; margin-right: auto;">Let's get in touch</h1>   
+
+                <table style="width:100%;max-width:700px;border:0; margin-top: 50px; margin-left: auto; margin-right: auto;" cellpadding="8" cellspacing="0">
+                <tr> <td>
+                <label for="Name">*Name:</label>
+                </td> <td>
+                <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+                </td> </tr> <tr> <td>
+                <label for="PhoneNumber">Phone number:</label>
+                </td> <td>
+                <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+                </td> </tr> <tr> <td>
+                <label for="FromEmailAddress">*Email address:</label>
+                </td> <td>
+                <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+                </td> </tr> <tr> <td>
+                <label for="Comments">*Comments:</label>
+                </td> <td>
+                <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+                </td> </tr> <tr> <td>
+                * - required fields
+                </td> <td>
+                <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                <input name="skip_Submit" type="submit" value="Submit" class="standardButton">
+                <script src="https://www.100forms.com/js/FORMKEY:QFEPP3UMFY2P/SEND:my@email.com" type="text/javascript"></script>
+                </td> </tr>
+                </table>
+                </form>
+        </div>
         </body>
         <footer class="footer">
             <ul class=ul>
