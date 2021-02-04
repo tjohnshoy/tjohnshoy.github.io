@@ -49,10 +49,13 @@
         text-decoration: none;
     }
 
-    h1  {
-      text-align: start;
+    .h1  {
+      text-align: left;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 30px;
     }
-    .subTitle   {
+
+    .h2   {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 25px;
       text-align: center;

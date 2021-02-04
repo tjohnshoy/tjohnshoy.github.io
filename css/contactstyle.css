@@ -1,3 +1,7 @@
-.form  {
+.contactLayout  {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+max-width: 700px;
+display: block;
+margin-right: auto;
+margin-left: auto;
 }
