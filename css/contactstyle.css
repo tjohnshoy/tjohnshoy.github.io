@@ -1,7 +1,48 @@
-.contactLayout  {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-max-width: 700px;
-display: block;
-margin-right: auto;
-margin-left: auto;
+.flexContainer  {
+    display: flex;
+    justify-content: space-between;
+}
+.table  {
+    max-width: 80%;
+}
+.rightSidebar   {
+    text-align: right;
+    max-width: 30%;
+    min-width: 30%;
+}
+.sideText   {
+    font-size: 15px;
+    text-align: right;
+    padding: 0px 10px 0px 0px
+}
+
+@media only screen and (max-width: 600px) {
+
+    .table  {
+        grid-area: "table";
+        max-width: 100%;
+        padding: 0px 15px 50px 15px;
+    }
+    .rightSidebar   {
+        grid-area: "rideSidebar";
+        text-align: left;
+        max-width: 100%;
+        padding: 10px 0px 40px 15px;
+        grid-row-start: 1;
+    }
+    .flexContainer  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        flex-direction: row-reverse;
+        grid-template-areas: 
+        "rightSidebar"
+        "table"
+    }
+    .sideText   {
+        font-size: 15px;
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+        line-height: 6px;
+    }
 }

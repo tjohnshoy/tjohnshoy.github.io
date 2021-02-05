@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Work</title>
+        <title>Contact</title>
         <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
         <link href="css\style.css" rel="stylesheet" type="text/css">
         <link href="css\contactstyle.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
                 <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
               </ul>
             </div>
-          </nav>
+        </nav>
             <header class="navigation">
                 <div class="inline-block logo">
                     <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg ; width=60px></a>
@@ -46,52 +46,64 @@
                     </ul>
                 </nav>
             </header>
+        <section class="mainLayout">
+            <p class="h1">Let's get in touch</p> 
+            <div class="flexContainer">
+                <div class="table">
+                    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                    <script type="text/javascript">
+                    function ValidateForm(frm) {
+                    if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                    if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                    if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                    if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                    return true; }</script>
 
-            <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
-                <script type="text/javascript">
-                function ValidateForm(frm) {
-                if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
-                if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
-                if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
-                if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
-                return true; }
-                </script>
-            <section class="contactLayout">
-                <h1 class="h1" style="padding-top: 20px;">Let's get in touch</h1>   
+                    <table style="width:100%;border:0; margin-bottom: 50px; margin-right: auto; margin-left: auto;" cellpadding="8" cellspacing="0">
+                    <tr> <td>
+                    <label for="Name">*Name:</label>
+                    </td> <td>
+                    <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+                    </td> </tr> <tr> <td>
+                    <label for="PhoneNumber">Phone number:</label>
+                    </td> <td>
+                    <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+                    </td> </tr> <tr> <td>
+                    <label for="FromEmailAddress">*Email address:</label>
+                    </td> <td>
+                    <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+                    </td> </tr> <tr> <td>
+                    <label for="Comments">*Comments:</label>
+                    </td> <td>
+                    <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+                    </td> </tr> <tr> <td>
+                    * - required fields
+                    </td> <td>
+                    <div style="float:right"><a style="color: #ffffff;" href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                    <input name="skip_Submit" type="submit" value="Submit" class="standardButton">
+                    <script src="https://www.100forms.com/js/FORMKEY:QFEPP3UMFY2P/SEND:my@email.com" type="text/javascript"></script>
+                    </td> </tr>
+                    </table>
+                    </form>
+                </div>
+               
+                <div class="rightSidebar">
+                    <p class="h3" style="padding: 0px 10px 0px 0px">EMAIL</p>
+                    <p class="sideText"> <a style="color: black;" href="mailto:tenajohnshoy@gmail.com"> tenajohnshoy@gmail.com</a></p>
+                    <p class="h3" style="padding: 0px 10px 0px 0px">PHONE</p>
+                    <p class="sideText">(320) 424-1205</a></p>
 
-                <table style="width:100%;max-width:700px;border:0; margin-top: 20px; margin-bottom: 50px; margin-left: auto; margin-right: auto;" cellpadding="8" cellspacing="0">
-                <tr> <td>
-                <label for="Name">*Name:</label>
-                </td> <td>
-                <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
-                </td> </tr> <tr> <td>
-                <label for="PhoneNumber">Phone number:</label>
-                </td> <td>
-                <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
-                </td> </tr> <tr> <td>
-                <label for="FromEmailAddress">*Email address:</label>
-                </td> <td>
-                <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
-                </td> </tr> <tr> <td>
-                <label for="Comments">*Comments:</label>
-                </td> <td>
-                <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
-                </td> </tr> <tr> <td>
-                * - required fields
-                </td> <td>
-                <div style="float:right"><a style="color: #ffffff;" href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
-                <input name="skip_Submit" type="submit" value="Submit" class="standardButton">
-                <script src="https://www.100forms.com/js/FORMKEY:QFEPP3UMFY2P/SEND:my@email.com" type="text/javascript"></script>
-                </td> </tr>
-                </table>
-                </form>
-            </section>
-        </body>
-        <footer class="footer">
-            <ul class=ul>
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">work</a></li>
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
-            </ul>
-        </footer>
+                </div>
+            </div>           
+        </section>
+
+</body>
+<footer class="footer">
+    <ul class=ul>
+        <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
+        <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
+        <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">work</a></li>
+        <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
+    </ul>
+</footer>
+</html>
