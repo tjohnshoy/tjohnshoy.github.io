@@ -4,14 +4,31 @@
     justify-content: center;
 
 }
+.heading1  {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #0F1626;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.heading2   {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: #0F1626;
+}
+  
 .heading   {
     font-size: 50px;
     line-height: 60px;
 }
 .bodyText   {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 28px;
     vertical-align: top;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .rightBody   {
     font-size: 17px;
@@ -22,20 +39,16 @@
     max-width: 80%;
     margin-left: 30px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
-.tagline    {
-    font-weight: bold;
-    line-height: 25px;
-    font-size: 25px;
-    padding: 0%;
 
-}
 .designProcess  {
     max-width: 675px;
 }
 .row    {
-    margin-top: 100px;
+    margin-top: 50px;
     max-width: 675px;
+    padding-left: 0px
 }
 .researchImg    {
     max-width: 90%;
@@ -65,3 +78,28 @@
     max-width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    .heading1  {
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        color: #0F1626;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-left: 15px;
+    }
+    .heading2   {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        text-align: left;
+        color: #0F1626;
+        padding: 0px 15px 0px 15px
+    }
+    .bodyText   {
+        font-size: 17px;
+        line-height: 28px;
+        vertical-align: top;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0px 15px 0px 15px
+    }
+}

@@ -21,13 +21,13 @@
     .table  {
         grid-area: "table";
         max-width: 100%;
-        padding: 0px 15px 50px 15px;
+        padding: 0px 0px 50px 0px;
     }
     .rightSidebar   {
         grid-area: "rideSidebar";
         text-align: left;
         max-width: 100%;
-        padding: 10px 0px 40px 15px;
+        padding: 10px 0px 40px 0px;
         grid-row-start: 1;
     }
     .flexContainer  {

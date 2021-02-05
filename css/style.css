@@ -3,7 +3,6 @@
         position: relative;
         min-height: 100%;
     }
-
      body    {
         margin: 0px;
         padding: 0px;
@@ -56,12 +55,13 @@
       font-size: 30px;
       color: #0F1626;
       margin-bottom: 15px;
+      margin-top: 0px;
     }
 
     .h2   {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 25px;
-      text-align: center;
+      text-align: left;
       color: #0F1626;
   }
 
@@ -80,6 +80,7 @@
       display: block;
       margin-right: auto;
       margin-left: auto;
+      margin-top: 0px;
       padding-top: 35px;
       min-height: 100%;
       height: 100%;
@@ -138,16 +139,16 @@
         text-decoration: underline;
         text-decoration-color: white;
     }
-        #menuToggle {
+    #menuToggle {
         display: none;
     }
-         #menu   {
-         display: none;
+    #menu   {
+        display: none;
     } 
     #myBtn {
       position: fixed;
-      bottom: 75px;
-      right: 323px;
+      bottom: 5%;
+      right: 2%;
       background-image: url("../images/chevron-up-solid.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -197,12 +198,12 @@
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           font-size: 30px;
           color: #0F1626;
-          padding: 0px 0px 0px 15px;
+          padding: 0px 0px 0px 0px;
           margin-bottom: 15px;
         }
         .mainLayout  {
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          max-width: 675px;
+          max-width: 90%;
           display: block;
           margin-right: auto;
           margin-left: auto;
@@ -210,6 +211,7 @@
           min-height: 100%;
           height: 100%;
           }
+
         .standardButton {
             display: inline-block;
             background-color:#18233E;
@@ -246,6 +248,11 @@
         .inline-block.logo{
             display: block;
             padding: 0px 30px 10px 0px;
+        }
+
+        #myBtn  {
+          display:none;
+          visibility: hidden;
         }
 
           body
