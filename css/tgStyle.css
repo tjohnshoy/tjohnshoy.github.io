@@ -2,7 +2,6 @@
     max-width: 675px;
     display: flex;
     justify-content: center;
-    padding-left: 0px;
 
 }
 .heading1  {
@@ -51,10 +50,7 @@
     max-width: 675px;
     padding-left: 0px
 }
-.researchImg    {
-    max-width: 90%;
-    display: flex;
-}
+
 .sectionHeading {
     display: flex;
     justify-content: flex-start;
@@ -77,6 +73,10 @@
 .card   {
     border: none;
     max-width: 100%;
+}
+
+.dropdown   {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -102,5 +102,10 @@
         vertical-align: top;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: 0px 15px 0px 15px
+    }
+    .dropdown   {
+        display: flex;
+        width: 100%;
+        padding-bottom: 20px;
     }
 }
