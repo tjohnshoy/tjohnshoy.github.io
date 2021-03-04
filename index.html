@@ -14,67 +14,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
-    <link href="css\style.css" rel="stylesheet" type="text/css">
     <link href="css\homeflex.css" rel="stylesheet" type="text/css">
+    <link href="css\style.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>  
 
-<nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-      
-      <!--
-      Some spans to act as a hamburger.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <ul id="menu">
-        <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
-        <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
-        <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
-        <a href="https://tjohnshoy.github.io/myWork.html"><li>Work</li></a>
-        <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
-      </ul>
-    </div>
-  </nav>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+        
+            <ul id="menu">
+                <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
+                <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
+
+                <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
     <header class="navigation">
         <div class="inline-block logo">
-            <img src=images\logo.svg width="60px">
+            <img src=images\logo.svg width="80px">
         </div>
         <nav class="inline-block">
             <ul class="topMenu">
+                <li class="inline-block"><a href="https://tjohnshoy.github.io/myWork.html" class="active">home</a></li>
                 <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
                 <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/myWork.html" class="hover">work</a></li>
                 <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="hover">contact</a></li>
             </ul>
         </nav>
     </header>
+<div>
+    <div style="background-image: url('../tjohnshoy.github.io/images/headerBackground.png'); object-fit: fill; height: 80vh;">
+    <div style="background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(255,255,255,1)); object-fit: fill; height: 80vh;">
 
-
-    <div class="mainLayout homeGrid">
-        <section class="flexcontainer">
-            <div class=skill1>
-                <div class="h1">Tena Johnshoy Barasa
-                        <p class="bodyContent">UX | UI Designer</p>
+    <div class="mainLayout">
+        <div class="homeGrid">
+            <section class="flexcontainer">
+                <div class=heading>
+                    <div class="h1" style="margin-bottom: 5px">Tena Johnshoy Barasa
+                            <p class="h2"style="margin:10px 0px">UX | UI Designer</p>
+                    </div>
+                    
+                    <div style="display: flex; width: 90%;">
+                        <form method="get" action="https://tjohnshoy.github.io/RESUME%20-%20Google%20Docs.pdf" target="blank" style="margin-right: 1em; width: 50%;"><button type="submit">View Resume</button></form>
+                        <form method="get" action="https://tjohnshoy.github.io//contact.html" style="width: 50%;"><button type="submit">Contact Me</button></form>
+                        <!-- <p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="standardButton">View Resume</span></a></p>
+                        <p><a href="https://tjohnshoy.github.io/contact.html"><span class="secondaryButton">Contact Me</span></a></p> -->
+                    </div>
                 </div>
-                <div style="display: flex;">
-                    <p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="standardButton">View Resume</span></a></p>
-                    <p><a href="https://tjohnshoy.github.io/contact.html"><span class="secondaryButton">Contact Me</span></a></p>
+                <div class=illustration>
+                    <img src="images\undraw_design_feedback_dexe (1).svg" class="illustration">
+                </div>                
+            </section>
+        </div> 
+    </div>
+    </div>
+    </div>
+</div>
+        <div class="h2 mainLayout" style="padding: 50px 0px 20px 0px">My Work</div>
+        <div class="wrapper">
+            <div class="card"><img src="https://tjohnshoy.github.io/images/tgPhone.png">
+                <div class="info">
+                    <div class="h2" style="color: white;">Travelgistics</div>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
                 </div>
             </div>
-            <div class=placeholder>
-                <img src="images\undraw_design_feedback_dexe (1).svg" class="placeholder">
-            </div>                
-        </section>
-    </div> 
-    
+            <div class="card"><img src="C:\Users\tjohn\OneDrive\Documents\Design\GitHub\tjohnshoy.github.io\images\EdWebView.png" />
+                <div class="info">
+                    <div class="h2" style="color: white;">Department of Education</div>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Learn More</button>
+                </div>
+            </div>
+            <div class="card"><img src="C:\Users\tjohn\OneDrive\Documents\Design\GitHub\tjohnshoy.github.io\images\PtMobileView.png" />
+                <div class="info">
+                    <div class="h2" style="color: white;">Plant That</div>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="card"><img src="https://tjohnshoy.github.io/images/tgPhone.png">
+                <div class="info">
+                    <div class="h2" style="color: white;">Travelgistics</div>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
+                </div>
+            </div>
+            <div class="card"><img src="C:\Users\tjohn\OneDrive\Documents\Design\GitHub\tjohnshoy.github.io\images\EdWebView.png" />
+                <div class="info">
+                    <div class="h2" style="color: white;">Department of Education</div>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Learn More</button>
+                </div>
+            </div>
+            <div class="card"><img src="C:\Users\tjohn\OneDrive\Documents\Design\GitHub\tjohnshoy.github.io\images\PtMobileView.png" />
+                <div class="info">
+                    <div class="h2" style="color: white;">Plant That</div>
+                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Learn More</button>
+                </div>
+            </div>
+        </div>
+  
+
+    </div>
     <footer class="footer">
                     <ul class=ul>
                         <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>

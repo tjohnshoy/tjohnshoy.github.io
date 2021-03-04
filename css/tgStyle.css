@@ -9,7 +9,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: #0F1626;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-top: 0px;
 }
 .heading2   {
@@ -28,25 +28,26 @@
     line-height: 28px;
     vertical-align: top;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-}
-.rightBody   {
-    font-size: 17px;
-    line-height: 28px;
-    margin-left: 30px;
-}
 .hero   {
     max-width: 80%;
     margin-left: 30px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.image  {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 .designProcess  {
     max-width: 675px;
 }
 .row    {
-    margin-top: 50px;
     max-width: 675px;
     padding-left: 0px
 }
@@ -106,6 +107,6 @@
     .dropdown   {
         display: flex;
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 }
