@@ -4,7 +4,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 15vh;
-    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
 }
 .illustration    {
     display: block;
@@ -26,10 +28,12 @@
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+    flex-wrap:wrap;
+    gap: 30px;
   }
   
   .card {
-    width: 240px;
+    width: 30%;
     height: 300px;
     border-radius: 15px;
     padding: 1.5rem;
@@ -121,7 +125,6 @@
     transition: 0.4s ease;
     text-decoration: none;
     font-size: 1em;
-
   }
   .card .info button:hover {
     background: #18233E;
@@ -141,16 +144,92 @@
     margin-top: 15%;
     justify-content: flex-start;
 }
-.subTitle   {
-    margin: 90px 10px 0px 0px;
-    font-size: 34px;
-}
+
 .bodyContent    {
     font-size: 20px;
     margin: 0px 0px 0px 0px;
     text-align: left;
 }
 
+
+@media only screen and (max-width: 1024px) {
+    
+    
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    .center   {
+        display: grid;
+        justify-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #0F1626;
+    }
+    .flexcontainer  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 40%;
+        padding-bottom: 70px;
+        max-width: 80%;
+        padding: 0px 0px 0px 0px;
+        justify-content: center;
+    }
+    .heading {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin-top: 15%;
+        flex-basis: 45%;
+        justify-content: flex-start;
+        margin-bottom: 15%;
+    }
+    .heading button {
+        font-size: .9em;
+    }
+    
+    .skill1 {
+        margin-top: 20px;
+    }
+
+    .illustration    {
+        display: flex;
+        margin-top: 0px;
+        max-width: 90%;
+        height: auto;
+        flex-basis: 55%;
+        }
+    #myBtn {
+        visibility: hidden;
+    }
+    .bodyContent    {
+        font-size: 20px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        justify-content: center;
+
+      }
+      
+      .card {
+        width: 46%;
+        height: 350px;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        background: white;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.4s ease-out;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+      }
+
+}
 
 @media only screen and (max-width: 600px) {
     
@@ -197,7 +276,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 20px;
+            margin-top: 0px;
             padding-right: 10px;
             max-width: 100%;
             height: auto;
