@@ -1,5 +1,5 @@
 .container  {
-    max-width: 675px;
+    max-width: 800px;
     display: flex;
     justify-content: center;
 
@@ -23,6 +23,20 @@
     font-size: 50px;
     line-height: 60px;
 }
+.summary    {
+    height: auto;
+    margin: 10px 0px 0px 0px;
+    overflow: auto;
+}
+.summary .bodyText   {
+    font-size: 18px;
+    line-height: 28px;
+    vertical-align: top;
+    font-style: italic;
+    color: rgb(53, 53, 53);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
 .bodyText   {
     font-size: 18px;
     line-height: 28px;
@@ -31,8 +45,8 @@
 }
 
 .hero   {
-    max-width: 80%;
-    margin-left: 30px;
+    max-width: 90%;
+    margin-left: 20px;
     margin-top: 15px;
     margin-bottom: 50px;
 }
@@ -45,10 +59,10 @@
 }
 
 .designProcess  {
-    max-width: 675px;
+    max-width: 800px;
 }
 .row    {
-    max-width: 675px;
+    max-width: 800px;
     padding-left: 0px
 }
 
@@ -59,7 +73,7 @@
 }
 .narrow {
     margin-top: 0px;
-    max-width: 675px;
+    max-width: 800px;
 }
 
 .sectionAnchor  {
