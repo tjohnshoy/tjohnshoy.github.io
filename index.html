@@ -11,6 +11,25 @@
 
   gtag('config', 'G-N18ZF9GP8T');
 </script>
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -44,7 +63,7 @@
             </ul>
         </div>
     </nav>
-    <header class="navigation">
+    <header class="navigation sticky" id="myHeader">
         <div class="inline-block logo">
             <img src=images\logo.svg width="80px">
         </div>
@@ -58,11 +77,11 @@
         </nav>
     </header>
 <div>
-    <div style="background-image: url('../tjohnshoy.github.io/images/headerBackground.png'); object-fit: cover; height: 50%;">
+
     <!-- <div style="background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, rgba(255,255,255,1)); object-fit: fill; height: 80vh;"> -->
 
     <div>
-        <div class="homeGrid" style="height: 100%;">
+        <div class="homeGrid" style="height: 100%; margin-top: 100px;">
             <section class="flexcontainer">
                 <div class=heading>
                     <div class="h1" style="margin-bottom: 5px; ">Tena Johnshoy Barasa

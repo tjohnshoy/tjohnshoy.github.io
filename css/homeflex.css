@@ -21,6 +21,11 @@
     box-sizing: border-box;
   }
   
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
   .wrapper {
     display: flex;
     width: 100%;
