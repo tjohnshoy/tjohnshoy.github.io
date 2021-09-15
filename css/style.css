@@ -221,7 +221,7 @@
             display: inline-block;
             background-color:#18233E;
             border-color:#18233E;
-            border-radius: 5px;
+            border-radius: 3px;
             border-width: 2px;
             border-style: solid;
             text-align: center;
@@ -237,7 +237,7 @@
         .secondaryButton {
             display: inline-block;
             border-color:#18233E;
-            border-radius: 5px;
+            border-radius: 2px;
             border-width: 2px;
             border-style: solid;
             width: 85%;

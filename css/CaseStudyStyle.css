@@ -48,14 +48,15 @@
     max-width: 90%;
     margin-left: 20px;
     margin-top: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .image  {
     display: flex;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
+    height: auto;
 }
 
 .designProcess  {
@@ -95,6 +96,13 @@
 }
 ul  {
     margin-top:revert
+}
+.callOut    {
+    padding: 25px 0px;
+    font-size: 28px;
+    color: #18233e;
+    font-weight: 600;
+    text-align: center;
 }
 
 
