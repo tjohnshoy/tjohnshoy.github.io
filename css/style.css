@@ -32,14 +32,23 @@
         justify-content: center;
         align-content: center;
         width: 100%;
-        padding-top: 10;
+        padding-top: 10px;
         margin-bottom: 5px;
         text-decoration: none;
         background-color: #ffffff;
-        z-index: 1;
         box-shadow: 0px 10px 10px 0px rgba(199, 199, 199, 0.05);
     }
 
+    [role=navigation]   {
+      z-index: 1;
+    }
+    
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+  }
     .topMenu{
       padding-top: 10px;
     }
@@ -182,10 +191,15 @@
         .navigation    {
             display: grid;
             justify-content: right;
-            padding: 0px 0px 0px 0px;
+            padding: 0px 0px 20px 0px;
             margin-top: 0px;
+            z-index: 3;
+            background-color: #ffffff00;
+            box-shadow: none;
         }
-
+        .sticky {
+          position: static;
+        }
         .inline-block   {
             display: grid;
             vertical-align: top;
@@ -293,6 +307,7 @@
             color: #232323;
             display: block;
             transition: color 0.3s ease;
+            z-index: 1;
           }
 
           #menuToggle a:hover
@@ -310,7 +325,7 @@
             left: -5px;
             cursor: pointer;
             opacity: 0; /* hide this */
-            z-index: 2; /* and place it over the hamburger */
+            z-index: 1; /* and place it over the hamburger */
             
             -webkit-touch-callout: none;
           }
@@ -327,7 +342,7 @@
             position: relative;
             background: #0F1626;
             border-radius: 3px;
-            z-index: 1;
+            z-index: 2;
             transform-origin: 4px 0px;
             transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                         background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),

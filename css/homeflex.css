@@ -21,10 +21,9 @@
     box-sizing: border-box;
   }
   
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
+.homeGrid {
+  padding-top: 100px;
+  height: 100%;
 }
   .wrapper {
     display: flex;
