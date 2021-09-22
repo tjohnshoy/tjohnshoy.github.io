@@ -30,7 +30,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 12vh;
+    margin-bottom: 16vh;
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
@@ -242,8 +242,6 @@
         display: flex;
         flex-wrap: wrap;
         max-width: 80%;
-        justify-content: center;
-
       }
       
       .card {
@@ -335,7 +333,7 @@
       .wrapper {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 12vh;
+        margin-bottom: 17vh;
         max-width: 75%;
         margin-right: auto;
         margin-left: auto;
