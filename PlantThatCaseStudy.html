@@ -1,59 +1,79 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PlantThat Case Study</title>
     <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css\CaseStudyStyle.css" rel="stylesheet" type="text/css">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    </head>
 
+    <script>
+        // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    // Get the header
+    var header = document.getElementById("myHeader");
+    
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+    
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+    
+  </head>
 <body>  
-  <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-        
-        <!--
-        Some spans to act as a hamburger.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-        
-        <ul id="menu">
-          <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
-          <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
-          <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
-          <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
-        </ul>
-      </div>
-  </nav>
-  <header class="navigation">
-        <div class="inline-block logo" >
-          <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg style="border-bottom: none !important"; width="80px">
-        </div>
-        <nav class="inline-block">
-            <ul class="topMenu">
-                <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="hover">home</a></li>
-                <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
-                <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
-                <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="hover">contact</a></li>
-            </ul>
+    
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input class="menuCheckbox" type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+            
+                <ul id="menu">
+                    <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
+                    <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                    <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
+                    <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
         </nav>
-        <button id="myBtn" title="Go to top" style="display: block;"></button>
-  </header>
+        <header class="navigation ">
+            <div class="inline-block logo">
+              <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg style="border-bottom: none !important"; width="80px">
+              </div>
+            <nav class="inline-block">
+                <ul class="topMenu">
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/myWork.html" class="active">home</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="hover">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    
   
   <div class="container">
       <div class="row" style="margin-top: 50px;">
           <div class="col-lg-6">
-            <p class="heading1">Plant That Case Study</p>
+            <p class="heading1" >PlantThat Case Study</p>
             <p class="heading2">Your Plant Companion</p>
             <div class="summary">
               <p class="bodyText">Project Type: Mobile App<br>
@@ -61,16 +81,19 @@
               My Role: UX Designer<br>
               Tools Used: Adobe XD, Google Forms, Miro, Lucidchart, Storyboard That</p>
             </div>
-            <p class="bodyText" style="padding-bottom: 30px">The Plant That app was developed to address and solve a problem for our users’ everyday lives. The problem we identified is that many people enjoy the process of planting and growing a variety of plants, but they lack the knowledge and resources to be successful in maintaining them. The goal for the project was to create an app that helps people be successful at growing plants. The project would address those needs by providing the help and resources to enable growers of all levels of experience to succeed. </p>
-
+            <p class="bodyText" style="padding-bottom: 10px">The PlantThat app was developed to address and solve a problem for our users’ everyday lives. The problem we identified is that many people enjoy the benefits of growing plants, but may struggle to maintain them. The goal for the project was to create an app that provides tools to help users be successful plant growers. </p>
+            <div class="text-center">
+              <button class="standardButton" >View the Prototype</button>
+              </div>
           </div>
-          <div class="col-lg-6 heading" style="padding-right: 0px">
-            <img class="hero"; src="images/PlantThat/PtMobileView.png" alt="">
+          <div class="col-lg-6" style="padding-right: 0px">
+            <img class="hero"; src="images/PlantThat/ptHero.png" alt="">
           </div> 
+
       </div>
   </div>  
   <div class="container d-none d-lg-block">
-    <div class="row" style="margin-top: 0px; margin-bottom: 60px;" >
+    <div class="row" style="margin-top: 20px; margin-bottom: 60px;" >
       <div class="col-lg-2" style="display:block; margin:auto">
         <a href="#research"><img style="max-height: 60px;display:block; margin:auto" src="images\users-solid.svg" alt=""></a>
         <div>
@@ -105,7 +128,7 @@
       </div>
       </div> 
     </div>
-</div>
+  </div>
 
   <div class="container">
     <div class="row" style="width: 95%;">
@@ -127,8 +150,11 @@
         
   <div class="container">
       <div class="row">
+        <div class="col-lg-12 ">
+          <p class="heading2">User Research</p>
+        </div>
         <div class="col-lg-6 ">
-          <p class="heading1">User Research</p><p class="bodyText">The research phase for this project included 6 twenty minute user interviews and survey feedback from approximately 50 respondents. We asked all participants a series of questions about their interests in plants and/or gardening. The purpose was to understand the highs and lows of gardening and determine if a digital tool would be useful for gardeners.
+          <p class="bodyText">The research phase for this project included 6 twenty minute user interviews and survey feedback from approximately 50 respondents. We asked all participants a series of questions about their interests in plants and/or gardening. The purpose was to understand the highs and lows of gardening and determine if a digital tool would be useful for gardeners.
           </p>
           <p class="bodyText" style="padding-bottom: 30px">Through our research, we set out to discover how to help users achieve their goals and maintain optimal conditions so their plants can thrive. What we found is that people have many reasons for wanting to grow and maintain healthy plants, but oftentimes there is a lack of knowledge, time, and discipline preventing them from achieving their desired outcome. </p>
 
@@ -172,11 +198,11 @@
     <div class="row">
         <div class="col-lg-12 heading">
           <a id=definition></a>
-          <p class="heading1">Definition</p></a>
+          <p class="heading2">Definition</p></a>
 
             <p class="bodyText" >We determined the focus for the project should be on plant enthusiasts with beginner and intermediate skill levels. Our survey data showed a positive correlation between skill level and age, so we deduced that the younger age ranges would benefit most from this product. With this information, we narrowed our user personas age to be between 20 and 39. </p>
             <p class="bodyText">Our data revealed the two main pain points for the user are: </p>
-              <ol class="bodyText">
+              <ol class="bodyText" style="padding-left: 10%;">
                 <li>Experiencing plant die off</li>
                 <li>Keeping up with plant maintenance</li>
               </ol>
@@ -186,19 +212,19 @@
       </div>
     </div>
 
-<div class="container">
-  <div class="row">
-        <div class="col-lg-12" style="padding-bottom: 30px;">
-          <p class="callOut border border-right-0 border-left-0" >How might we reduce the amount of time, money and frustration for users due to plant underperformance or loss, and enable them to be more successful in plant growing and gardening?</p>
+  <div class="container">
+    <div class="row">
+          <div class="col-lg-12" style="padding-bottom: 30px;">
+            <p class="callOut border border-right-0 border-left-0" >How might we reduce the amount of time, money and frustration for users due to plant underperformance or loss, and enable them to be more successful in plant growing and gardening?</p>
+          </div>
         </div>
-      </div>
-  </div> 
+    </div> 
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <a id="ideation">
-            <p class="heading1">Ideation</p></a>
+            <p class="heading2">Ideation</p></a>
             <p class="bodyText">One problem we encountered in defining the parameters for the app was scope creep. The research and brainstorming process resulted in a long list of wish list items that had merit and were supported by our research findings. Given the timeline and resources allowed for the project, it was not feasible for us to build out all of these tools. To address the problem, we created a feature priority matrix and mapped out the effort versus impact for the various proposed features. This method allowed us to create a “short list” of manageable yet high impact offerings for the app. 
             </p>
             <p class="bodyText">As a team, we experimented with storyboards to come up with a design flow that made sense for our user. We made iterations to our story in order to capture the most useful application of the product and to get the team on the same page before moving into the prototyping stage.  </p>
@@ -212,8 +238,11 @@
     </div> 
     <div class="container">
       <div class="row">
+        <div class="col-lg-12 ">
+          <p class="heading2">Prototyping</p>
+        </div>
         <div class="col-lg-6 ">
-          <p class="heading1">Prototyping</p><p class="bodyText">The research phase for this project included 6 twenty minute user interviews and survey feedback from approximately 50 respondents. We asked all participants a series of questions about their interests in plants and/or gardening. The purpose was to understand the highs and lows of gardening and determine if a digital tool would be useful for gardeners.
+          <p class="bodyText">Once we had decided on our core features for the app, we created a task flow diagram to map the various pages and how they would flow together. We realized that although we had been talking about the functionality extensively, we were envisioning slightly different ways to execute the prototype. This stage allowed the team to talk through important details and arrive at the best solutions. With our task flow complete, we were ready to develop our low-fidelity prototype which we would use to perform user testing. 
           </p>
         </div>
         <div class="col-lg-6">
@@ -225,7 +254,7 @@
       <div class="row narrow">
         <div class="cardContainer col-lg-3 col-sm-12">
           <div class="card">
-            <a href="images/tgWireframe3.png" data-toggle="lightbox" target="blank"><img class="image" src="images/tgWireframe3.png" class="card-img-top" alt="..."></a>
+            <a href="images\PlantThat\loResAddPlant.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\PlantThat\loResAddPlant.svg" class="card-img-top" alt="..."></a>
             <div class="card-bodyText">
               <p class="cardTitle"></p>
             </div>
@@ -233,7 +262,7 @@
         </div>
         <div class="cardContainer col-lg-3 col-sm-12">
           <div class="card">
-            <a href="images\tgwireframe.png" data-toggle="lightbox" target="blank"><img class="image" src="images\tgwireframe.png" class="card-img-top" alt="..."></a>
+            <a href="images\PlantThat\loResMyPlants.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\PlantThat\loResMyPlants.svg" class="card-img-top" alt="..."></a>
             <div class="card-bodyText">
               <p class="cardTitle"></p>
             </div>
@@ -241,7 +270,7 @@
         </div>
         <div class="cardContainer col-lg-3 col-sm-12">
           <div class="card">
-            <a href="images\tgMidWireframe2.png" data-toggle="lightbox" target="blank"><img class="image" src="images\tgMidWireframe2.png" class="card-img-top" alt="..."></a>
+            <a href="images\PlantThat\loResMaintLog.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\PlantThat\loResMaintLog.svg" class="card-img-top" alt="..."></a>
             <div class="card-bodyText">
               <p class="cardTitle"></p>
             </div>
@@ -249,7 +278,7 @@
         </div>
         <div class="cardContainer col-lg-3 col-sm-12">
           <div class="card">
-            <a href="images\tgMidWireframe.png" data-toggle="lightbox" target="blank"><img class="image" src="images\tgMidWireframe.png" class="card-img-top" alt="..."></a>
+            <a href="images\PlantThat\loResMenu.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\PlantThat\loResMenu.svg" class="card-img-top" alt="..."></a>
             <div class="card-bodyText">
               <p class="cardTitle"></p>
             </div>
@@ -257,37 +286,57 @@
         </div>
       </div>
   </div>
+  
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 heading ">
-        <img class="image order-sm-1"; style="width: 100%;" src="images\testingFeedback.jpg" alt="">
-      </div> 
-      <div class="col-lg-6">
-        <a id=testing><p class="heading1 order-lg-2">User Testing</p></a><p class="bodyText">The objective for my guerilla testing was to determine if users can successfully create a trip, find the favorites section, add an itinerary to their trip, and apply filters to their search. I tested these tasks as they are the primary function of the app, and the usability of these features is key to ensuring users will repeatedly use the app for travel.</p>
-      </div>
+        <div class="col-lg-12">
+          <a id=testing><p class="heading2">User Testing</p></a>
+        </div>
+        <div class="col-lg-6">
+          
+          <p class="bodyText">We conducted usability testing with five individuals to discover how the experience was for the user and find weak spots in the design. The primary objective was to determine if they could accomplish three main tasks:</p>
+          <ol class="bodyText" style="padding-left: 10%">
+            <li>Use the app to look up a Monstera plant and add it to “My Plants”</li>
+            <li>Update the Monstera plant to show that you watered it today</li>
+            <li>Navigate to the page where you'll find an overview of how to care for the Monstera plant</li>
+          </ol>
+        </div>
+    
+        <div class="col-lg-3 d-flex align-items-center justify-content-center" align="center">
+          <a href="images\PlantThat\hiResMyPlants2.png" data-toggle="lightbox" target="blank"><img class="image card-img-top" style="max-width: 100%;" src="images\PlantThat\hiResMyPlants2.png" alt=""></a>
+        </div>
+        <div class="col-lg-3 d-flex align-items-center justify-content-center" align="center">
+          <a href="images\PlantThat\hiResMenu.svg" data-toggle="lightbox" target="blank"><img class="image card-img-top" style="max-width: 100%;" src="images\PlantThat\hiResMenu.png" alt=""></a>
+        </div>
+        <div class="col-lg-12">
+          <p class="bodyText" style="padding-bottom: 60px">The most important finding from the testing was that users were confused by having “Maintenance Log” in a separate section from “My Plants”. The maintenance page was hard to find while the user was organically maneuvering through the app. As a result, we decided to integrate the two sections of the prototype to create a more streamlined user flow. This allowed us to simplify the design of the product, while creating a better experience for the user. </p>
+        </div>
     </div>
   </div>
 
   <div class="container">
-    <div class="row narrow">
-      <div class="col-lg-6 col-sm-12">
-        <br>
-        <div class="card">
-          <a id=outcome><p class="heading1">Outcome</p></a>
-          <p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="row">
+
+    <div class="col-lg-12 col-sm-12">
+    <a id=outcome><p class="heading2">Outcome</p></a>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      
+        <div>
+          <p class="bodyText">We set out to create an app that would help users be more successful with their plant growing. Along the way, we found that a simpler product with fewer features and screens was the most helpful and easy to use. The end product is a high-fidelity prototype that could be developed as a user-centered mobile application. </p>
           <button class="standardButton" style="max-width: 90%;">View High-Fidelity Prototype</button>
         </div>
       </div>
-      <div class="cardContainer col-lg-3 col-sm-12">
+      <div class="col-lg-3 col-sm-12">
         <br>
-        <div class="card">
-          <img class="image" src="images/TG_HiResSplash.png" class="card-img-top" alt="...">
+        <div class="card align-items-baseline">
+          <img class="image" src="images\PlantThat\hiResSplash.svg" class="" alt="...">
         </div>
       </div>
-      <div class="cardContainer col-lg-3 col-sm-12">
+      <div class="col-lg-3 col-sm-12">
         <br>
         <div class="card">
-          <img class="image" src="images/TG_HiResItinerary.png" class="card-img-top" alt="...">
+          <img class="image card-img-top" src="images\PlantThat\hiResHome.png" class="" alt="...">
         </div>
       </div>
       <!-- <div class="cardContainer col-lg-3 col-sm-12">
@@ -304,26 +353,26 @@
       </div> -->
     </div>
   </div>
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <p class="heading1">Final Thoughts</p><p class="bodyText">When we began researching for this project, I was surprised to find that the average user values and enjoys some spontaneity while they are traveling. Based on the research, I believe people will continue to migrate towards a more spontaneous mode of travelling since smartphones put the power in the users hands to make decisions in the moment.</p> <p class="bodyText">Although this app addresses a user need, there is a great deal of opportunity to expand the offerings in the future. A few such opportunities include integration with ride sharing apps like Lyft and Uber, purchasing capabilities, and personality profiles to enable user suggestions.</p>
       </div>
     </div>
-  </div>
-<br>
-<br>
-<br>
-<br>
+  </div> -->
+  <br>
+  <br>
+  <br>
+  <br>
 
-<footer class="footer center">
-  <ul class=ul style="padding-top: 13px;">
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
-  </ul>
-</footer>
+  <footer class="footer center">
+    <ul class=ul style="padding-top: 13px;">
+        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
+        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
+        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
+        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
+    </ul>
+  </footer>
 
 
 

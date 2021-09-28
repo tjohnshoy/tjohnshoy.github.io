@@ -9,7 +9,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: #0F1626;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-top: 0px;
 }
 .heading2   {
@@ -17,12 +17,9 @@
     font-size: 25px;
     text-align: left;
     color: #0F1626;
+    margin-bottom: 25px;
 }
   
-.heading   {
-    font-size: 50px;
-    line-height: 60px;
-}
 .summary    {
     height: auto;
     margin: 10px 0px 0px 0px;
@@ -99,9 +96,9 @@ ul  {
 }
 .callOut    {
     padding: 25px 0px;
-    font-size: 28px;
+    font-size: 25px;
     color: #18233e;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -112,7 +109,7 @@ ul  {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 30px;
         color: #0F1626;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
         margin-top: 0px;
         padding-left: 15px;
     }
