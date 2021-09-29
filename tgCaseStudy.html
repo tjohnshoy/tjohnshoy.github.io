@@ -1,53 +1,72 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Travelgistics Case Study</title>
     <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css\CaseStudyStyle.css" rel="stylesheet" type="text/css">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    </head>
 
+    <script>
+        // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    // Get the header
+    var header = document.getElementById("myHeader");
+    
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+    
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+    
+  </head>
 <body>  
-  <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-        
-        <!--
-        Some spans to act as a hamburger.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-        
-        <ul id="menu">
-          <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
-          <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
-          <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
-          <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
-        </ul>
-      </div>
-  </nav>
-  <header class="navigation ">
-        <div class="logo" >
-          <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg style="border-bottom: none !important"; width="80px">
-        </div>
-        <nav class="inline-block">
-            <ul class="topMenu">
-              <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="hover">home</a></li>
-              <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
-              <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
-              <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="hover">contact</a></li>
-          </ul>
+    
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input class="menuCheckbox" type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+            
+                <ul id="menu">
+                    <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
+                    <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                    <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
+                    <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
         </nav>
-  </header>
+        <header class="navigation sticky-top">
+            <div class="inline-block logo">
+              <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg style="border-bottom: none !important"; width="80px">
+              </div>
+            <nav class="inline-block">
+                <ul class="topMenu">
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/myWork.html" class="hover text-decoration-none">home</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover text-decoration-none">skills</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
   <button id="myBtn" title="Go to top" style="display: block;"></button>
 
@@ -130,22 +149,20 @@
   </div>
         
   <div class="container">
-      <div class="row">
-        <div class="col-lg-6 order-lg-2">
-          <p class="heading1">User Research</p><p class="bodyText">We began our research by interviewing six individuals that were selected based on the established proto persona. The interview questions were aimed at learning the steps people take while trip planning and the priorities they have for their vacations. We also sought to understand which parts of the process were creating pain points or obstacles for the user in achieving their goal. In addition, we collected survey data from 30 respondents to broaden our understanding of the pains and gains of trip planning. 
-          </p>
+    <div class="row">
+        <div class="col-lg-12 ">
+          <p class="heading2">User Research</p>
         </div>
-        <div class="col-lg-6 order-lg-1">
-              <a href="images\userPersonaShort.png" data-toggle="lightbox" target="blank"><img class="image"; src="images\userPersonaShort.png" alt=""></a>
+        <div class="col-lg-6 ">
+          <p class="bodyText">We began our research by interviewing six individuals that were selected based on the established proto persona. The interview questions were aimed at learning the steps people take while trip planning, their priorities, and ultimately, which parts of the process were creating pain points or obstacles. In addition to the interviews, we collected survey data from 30 respondents to broaden our understanding our user. 
+          </p>
+          <p class="bodyText pull-left" style="padding-bottom: 30px;"> Our research gave us a clear picture of the target audience for this application. The key demographics were adults ages 25-45, working full time, who travel 1-3 times per year. The user persona is a young professional who is all about having unique and authentic experiences while traveling. She is frustrated by hours spent researching activities, attractions and restaurants.
+
+        </div>
+        <div class="col-lg-6">
+    
+          <a  href="images\Travelgistics\userPersonaLong.png" data-toggle="lightbox" target="blank"><img class="image"; src="images\Travelgistics\userPersonaLong.png" alt=""></a>
         </div> 
-      </div>
- </div> 
- <div class="container">
-  <div class="row">
-    <div class="col-lg-12 ">
-      <p class="bodyText" style="padding-bottom: 60px;"> Our research gave us a clear picture of the target audience for this application. The key demographics were adults ages 25-45, working full time, who travel 1-3 times per year. The user persona, Piper Jones, is a young professional who is all about having unique and authentic experiences while traveling. She has a desire to be spontaneous while on vacation, and is frustrated by hours spent researching activities, attractions and restaurants. Time for vacation is limited, so the quality of each trip is highly important. 
-      </p>
-    </div>
   </div>
 </div> 
 
@@ -177,7 +194,7 @@
   <div class="container">
       <div class="row">
         <div class="col-lg-12 heading">
-          <a id=definition></a><p class="heading1">Definition</p></a><p class="bodyText" style="padding-bottom: 30px;">Travel apps and websites have been designed to help travelers plan the details of their vacations; However, we learned that the modern traveler finds the planning process to be cumbersome, and values spontaneous experiences. The key pain points identified were the time and energy needed for planning, sifting through reviews and finding unique or authentic experiences. </p>
+          <a id=definition></a><p class="heading2">Definition</p></a><p class="bodyText" style="padding-bottom: 30px;">Travel apps and websites have been designed to help travelers plan the details of their vacations; However, we learned that the modern traveler finds the planning process to be cumbersome, and values spontaneous experiences. The key pain points identified were the time and energy needed for planning, sifting through reviews and finding unique or authentic experiences. </p>
         </div>
         <div class="row">
           <div class="col-lg-12" style="padding-bottom: 30px;">
@@ -201,7 +218,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <a id="ideation"><p class="heading1">Ideation</p></a><p class="bodyText">We brainstormed potential features and tools that could address the goals and paint points for the user. The ideas were categorized into a value matrix based on how closely they aligned with the research we gathered. We also referenced our competitor analysis to see the strengths and weaknesses of other apps in the marketplace, and where we could best offer an improved user experience. 
+          <a id="ideation"><p class="heading2">Ideation</p></a><p class="bodyText">We brainstormed potential features and tools that could address the goals and paint points for the user. The ideas were categorized into a value matrix based on how closely they aligned with the research we gathered. We also referenced our competitor analysis to see the strengths and weaknesses of other apps in the marketplace, and where we could best offer an improved user experience. 
             </p>
             <p class="bodyText">After compiling and reviewing all of the data, three main features were determined to best fit the needs of the user: An itinerary builder, an itinerary library, and a review system which allows for user endorsement.</p>
         </div>
@@ -213,7 +230,7 @@
     <div class="container sectionHeading">
       <div class="row">
         <div class="col-lg-12">
-        <a id="prototyping"><p class="heading1">Prototyping</p></a><p class="bodyText">Prior to creating our low and mid-fidelity prototypes, we created a user flow diagram, user scenarios and user journey maps to plot out the necessary pages for the app, as well as the steps a user might take in a real world situation. We returned to our user persona to empathize with the feelings of our traveler and imagine the various scenarios where we could apply our solution to the users problem. </p>
+        <a id="prototyping"><p class="heading2">Prototyping</p></a><p class="bodyText">Prior to creating our low and mid-fidelity prototypes, we created a user flow diagram, user scenarios and user journey maps to plot out the necessary pages for the app, as well as the steps a user might take in a real world situation. We returned to our user persona to empathize with the feelings of our traveler and imagine the various scenarios where we could apply our solution to the users problem. </p>
         </div>
       </div>
     </div>
@@ -256,12 +273,15 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 heading ">
-        <img class="image order-sm-1"; style="width: 100%;" src="images\testingFeedback.jpg" alt="">
-      </div> 
-      <div class="col-lg-6">
-        <a id=testing><p class="heading1 order-lg-2">User Testing</p></a><p class="bodyText">The objective for my guerilla testing was to determine if users can successfully create a trip, find the favorites section, add an itinerary to their trip, and apply filters to their search. I tested these tasks as they are the primary function of the app, and the usability of these features is key to ensuring users will repeatedly use the app for travel.</p>
+      <div class="col-lg-12">
+        <a id=testing><p class="heading2">User Testing</p> </a>
       </div>
+      <div class="col-lg-6">
+        <p class="bodyText">The objective for my guerilla testing was to determine if users can successfully create a trip, find the favorites section, add an itinerary to their trip, and apply filters to their search. I tested these tasks as they are the primary function of the app, and the usability of these features is key to ensuring users will repeatedly use the app for travel.</p>
+       </div>
+      <div class="col-lg-6">
+        <img class="image"; style="width: 80%;" src="images\testingFeedback.jpg" alt="">
+      </div> 
     </div>
   </div>
 
@@ -270,7 +290,7 @@
       <div class="col-lg-6 col-sm-12">
         <br>
         <div class="card">
-          <a id=outcome><p class="heading1">Outcome</p></a>
+          <a id=outcome><p class="heading2">Outcome</p></a>
           <p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <button class="standardButton" style="max-width: 90%;">View High-Fidelity Prototype</button>
         </div>
@@ -293,7 +313,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <p class="heading1">Final Thoughts</p><p class="bodyText">When we began researching for this project, I was surprised to find that the average user values and enjoys some spontaneity while they are traveling. Based on the research, I believe people will continue to migrate towards a more spontaneous mode of travelling since smartphones put the power in the users hands to make decisions in the moment.</p> <p class="bodyText">Although this app addresses a user need, there is a great deal of opportunity to expand the offerings in the future. A few such opportunities include integration with ride sharing apps like Lyft and Uber, purchasing capabilities, and personality profiles to enable user suggestions.</p>
+        <p class="heading2">Final Thoughts</p><p class="bodyText">When we began researching for this project, I was surprised to find that the average user values and enjoys some spontaneity while they are traveling. Based on the research, I believe people will continue to migrate towards a more spontaneous mode of travelling since smartphones put the power in the users hands to make decisions in the moment.</p> <p class="bodyText">Although this app addresses a user need, there is a great deal of opportunity to expand the offerings in the future. A few such opportunities include integration with ride sharing apps like Lyft and Uber, purchasing capabilities, and personality profiles to enable user suggestions.</p>
       </div>
     </div>
   </div>
