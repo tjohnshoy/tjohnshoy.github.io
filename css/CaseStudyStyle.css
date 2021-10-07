@@ -17,7 +17,7 @@
     font-size: 25px;
     text-align: left;
     color: #0F1626;
-    margin-bottom: 25px;
+    margin: 25px 0px;
 }
   
 .summary    {
@@ -52,7 +52,7 @@
     display: flex;
     max-width: 100%;
     margin: auto;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     height: auto;
 }
 
