@@ -1,76 +1,100 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Department of Education Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Department of Education Redesign</title>
     <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css\CaseStudyStyle.css" rel="stylesheet" type="text/css">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    </head>
 
+    <script>
+        // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    // Get the header
+    var header = document.getElementById("myHeader");
+    
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+    
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+    
+  </head>
 <body>  
-  <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-        
-        <!--
-        Some spans to act as a hamburger.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-        
-        <ul id="menu">
-          <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
-          <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
-          <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
-          <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
-        </ul>
-      </div>
-  </nav>
-  <header class="navigation">
-        <div class="inline-block logo" >
-          <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg style="border-bottom: none !important"; width="80px">
-        </div>
-        <nav class="inline-block">
-            <ul class="topMenu">
-                <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="hover">home</a></li>
-                <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
-                <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
-                <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="hover">contact</a></li>
-            </ul>
+    
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input class="menuCheckbox" type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+            
+                <ul id="menu">
+                    <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
+                    <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                    <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
+                    <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
         </nav>
-        <button id="myBtn" title="Go to top" style="display: block;"></button>
-  </header>
+        <header class="navigation sticky-top">
+            <div class="inline-block logo">
+              <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg style="border-bottom: none !important"; width="80px">
+              </div>
+            <nav class="inline-block">
+                <ul class="topMenu">
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/index.html" class="hover text-decoration-none">home</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover text-decoration-none">skills</a></li>
+                    <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    
   
   <div class="container">
       <div class="row" style="margin-top: 50px;">
           <div class="col-lg-6">
-            <p class="heading1">Department of Education Case Study</p>
+            <p class="heading1" >US Department of Education Redesign</p>
             <div class="summary">
-              <p class="bodyText">Project Type: Web & Mobile App<br>
-              Team: Mary Henry & Tena Johnshoy Barasa<br>
-              My Role: UX Designer<br>
-              Tools Used: Adobe XD, Google Forms, Miro, Lucidchart, Storyboard That</p>
+              <p class="bodyText">Project Deliverable: Desktop & Mobile Website Prototype<br>
+              Team: Tena Johnshoy Barasa & 1 Researcher<br>
+              My Role: Researcher & UX Designer<br>
+              Tools Used: Adobe Color, Adobe XD, Dribbble, Miro, Accessible-colors.com</p>
             </div>
-            <p class="bodyText">Vacationers don’t want to spend hours researching activities and restaurants in order to have a great time on their trip. Travelgistics reduces the pre-planning workload and empowers travelers to be spontaneous while they are on-the-go in their travel destination.</p>
-
+            <p class="bodyText" style="padding-bottom: 10px">The goal of this project was to redesign a desktop and mobile website for the US Department of Education. We began by analyzing the design problems, and determined which issues were critical for improving usability and UI. The goal was accomplished by overhauling the navigation, reconstructing the information hierarchy, establishing design pattern consistency, and applying visual design principles.
+            </p>
+            <div class="text-center">
+              <button class=" standardButton">View the Desktop Prototype</button>
+              </div>
           </div>
-          <div class="col-lg-6 heading" style="padding-right: 0px">
-            <img class="hero"; src="images/DeptOfEd/EdWebView.png" alt="">
+          <div class="col-lg-6" style="padding-right: 0px">
+            <img class="hero"; src="images\DeptOfEd\EdWebView.png" alt="">
           </div> 
       </div>
   </div>  
-  <div class="container d-none d-lg-block">
-    <div class="row" style="margin-top: 0px; margin-bottom: 60px;" >
-      <div class="col-lg-2" style="display:block; margin:auto">
+
+    <div class="container d-none d-lg-block border border-right-0 border-left-0">
+      <div class="row" style="margin-top: 65px; margin-bottom: 50px;" >
+        <div class="col-lg-2" style="display:block; margin:auto">
         <a href="#research"><img style="max-height: 60px;display:block; margin:auto" src="images\users-solid.svg" alt=""></a>
         <div>
           <p class="sectionAnchor" style="padding-left: 0px"><a class="linkstyle" href="#research">Research</a></p>
@@ -104,7 +128,7 @@
       </div>
       </div> 
     </div>
-</div>
+  </div>
 
   <div class="container">
     <div class="row" style="width: 95%;">
@@ -126,140 +150,172 @@
         
   <div class="container">
       <div class="row">
-        <div class="col-lg-6 order-lg-2">
-          <p class="heading1">User Research</p><p class="bodyText">We began our research by interviewing six individuals that were selected based on the established proto persona. The interview script was aimed at finding information on the steps people take while trip planning and the priorities they have for their vacations. 
-            Survey data was collected from 29 respondents. The key demographics were people working full time, who traveled 1-3 times per year.
-            </p>
+        <div class="col-lg-12 ">
+          <p class="heading2">User Research</p>
         </div>
-        <div class="col-lg-6 order-lg-1">
-              <a href="images\userPersonaLong.png" data-toggle="lightbox" target="blank"><img class="image"; src="images\userPersonaLong.png" alt=""></a>
+        <div class="col-lg-6 bodyText">
+          <p>The typical user would visit this website to obtain data, legal information,and program information relating to elementary, secondary and higher education. We created a proto-persona to better understand the user and guide us in analyzing the content of the site.
+          </p>
+        </div>
+        <div class="col-lg-6">
+              <a href="images\DeptOfEd\DoEdProtoPersona.svg" data-toggle="lightbox" target="blank"><img class="sideImage" src="images\DeptOfEd\DoEdProtoPersona.svg" alt=""></a>
         </div> 
+        <div class="col-lg-12" style="padding-bottom: 30px; padding-top: 10px;">
+            <p class="callOut border border-right-0 border-left-0" >“There is a lot of information, it’s hard to find what I’m looking for...you have to scan everything first to zero-in on what you want” </p>
+        </div>
+        <div class="col-lg-12 bodyText" >
+          <p>We conducted five initial user tests to evaluate the performance of the website. We tested whether or not users were able to perform simple tasks like signing up for newsletters, locating grant information or finding information on prominent legislation.</p>
+        </div>
+        
+        <div class="col-lg-6 ">
+          <a href="images\DeptOfEd\FeedbackMatrix.png" data-toggle="lightbox" target="blank"><img class="sideImage"  src="images\DeptOfEd\FeedbackMatrix.png" alt=""></a>
+        </div>
+        <div class="col-lg-6 bodyText">
+        <p>In all the tests, users struggled to navigate through the site and were not successful in the majority of the tasks. They were overwhelmed with the amount of information and found it difficult to sift through all the links and text to find what they needed.</p>
+         <p>The main pain points identified were:</p> 
+        <ol>
+            <li>Difficulty finding content</li>
+            <li>Overwhelming layout</li>
+            <li>Poor information Chunking</li>
+            <li>Broken links or features</li>
+          </ol>
+        </div>
       </div>
  </div> 
 
     <div class="container">
-    <div class="row narrow">
-      <div class="cardContainer col-lg-3 col-sm-12">
-        <div class="card">
-          <a href="images\tgPieChart.svg" data-toggle="lightbox" target="blank"><img class="image" src="images/tgPieChart.svg" class="card-img-top" alt="..."></a>
-        </div>
+    <div class="row">
+      <!-- <div class="col-lg-6 col-sm-12">
+        <a href="images\DeptOfEd\DoEdHeuristicAnalysis.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\DeptOfEd\DoEdHeuristicAnalysis.svg" style="margin: -40px -10px -270px -10px" alt=""> </a> 
+       </div>
+       <div class="col-lg-6">
+        <a href="images\DeptOfEd\home.png"data-toggle="lightbox" target="blank"><img class="image"  src="images\DeptOfEd\home.png" alt=""></a>
+      </div> -->
+      <div class="col-lg-12 col-sm-12 bodyText">
+       <p>We conducted a heuristics analysis to identify and score the problems with the current site. We combined our user feedback with our technical assessment of the website to narrow down the highest priority items:</p>
       </div>
-      <div class="cardContainer col-lg-3 col-sm-12">
-        <div class="card">
-          <a href="images\tgBarGraph.svg" data-toggle="lightbox" target="blank"><img class="image" src="images/tgBarGraph.svg" class="card-img-top" alt="..."></a>
-        </div>
+      <div class="col-lg-6 col-sm-12 bodyText">
+          <ol>
+            <li>Optimizing the main navigation</li>
+            <li>Restructuring the information architecture </li>
+            <li>Reducing the amount of text, buttons and links</li>
+            <li>Establishing consistent design patterns</li>
+          </ol>
+          <p>The priority rankings for the redesign were determined based on how great of an impact they had on our pain points.</p>
       </div>
-      <div class="cardContainer col-lg-3 col-sm-12">
-        <div class="card">
-          <a href="images\tgAffinityDiagram.jpg" data-toggle="lightbox" target="blank"><img class="image" src="images/tgAffinityDiagram.jpg" class="card-img-top" style= "max-width:98%" alt="..."></a>
-        </div>
-      </div>
-      <div class="cardContainer col-lg-3 col-sm-12">
-        <div class="card">
-          <a href="images\empathyMap.jpg" data-toggle="lightbox" target="blank"><img class="image" src="images/empathyMap.jpg" class="card-img-top" alt="..."></a>
-        </div>
+      <div class="col-lg-6 col-sm-12">
+        <a href="images\DeptOfEd\Color Access_2.PNG" data-toggle="lightbox" target="blank"><img class="sideImage" src="images\DeptOfEd\Color Access_2.PNG"  alt="..."></a>
       </div>
     </div>
   </div>
     
   <div class="container">
-      <div class="row">
-        <div class="col-lg-6 heading">
-          <a id=definition></a><p class="heading1">Definition</p></a><p class="bodyText" style="padding-bottom: 50px;">Travel apps and websites have been designed to help travelers plan the details of their vacations; However, we have observed that travelers find planning all the details of their vacation to be cumbersome, and would like to have some spontaneous experiences. How might we reduce the pre-planning workload and empower travelers to be spontaneous while they are on-the-go in their travel destination? </p>
+    <div class="row">
+        <div class="col-lg-12">
+          <a id=definition>
+          <p class="heading2">Definition</p></a>
         </div>
-        <div class="col-lg-6 heading">
-          <img class="image" src="images\Value Matrix.jpg" alt="">
-        </div> 
+        <div class="col-lg-12 col-sm-12" >
+          <p class="bodyText">During our research learned that many of the links on the site are used to funnel users to more specific websites, such as FAFSA.gov or the studentaid.gov. This realization was key in thinking about potential user flows and how editing the navigation could assist in error prevention. How might we present the content in a way that defines the site's purpose, while clearly redirecting users who have arrived in error?</p>
+        </div>
+        <div class="col-lg-12">
+          <a href="images\DeptOfEd\navigation.png" data-toggle="lightbox" target="blank"><img class="image" src="images\DeptOfEd\navigation.png"  alt="..."></a>
+        </div>
+        <div class="col-lg-6 col-sm-12 bodyText">
+          <p>The existing navigation headings are Student loans, Grants, Laws and Data. Having a navigation heading like "students loans" and "data" is misleading to the user because it suggests this website is a resource for the information. In fact, the majority of student loan and data information is found on other government websites. In order to more clearly convey the purpose for the site, we decided to restructure the navigation.</p> 
+        </div>
+        <div class="col-lg-6">
+          <a href="images\DeptOfEd\cardSorting.jpg" data-toggle="lightbox" target="blank"><img class="sideImage" src="images\DeptOfEd\cardSorting.jpg" style="padding-top: 0;"  alt="..."></a>
       </div>
-  </div> 
+        <div class="col-lg-12 col-sm-12 bodyText">
+          <p>We conducted a card sorting exercise to begin work on the new sitemap and establish our new navigation. We arrived at the following headings: K-12 Education, Higher Ed, Early Childhood Education, Grants & Programs, Laws & Guidance</p>
+        </div>
+     </div>
+  </div>
+
+
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <a id="ideation"><p class="heading1">Ideation</p></a><p class="bodyText">After compiling and reviewing the potential features for the app, two main features were determined to best fit the needs of the user: An itinerary builder and library, and a review system which allows for user endorsement.
-            </p>
+          <a id="ideation">
+            <p class="heading2">Ideation</p></a>
+            <p class="bodyText">The UI direction for the website is clean, approachable and accessible in keeping with the department's mission aimed at educational equity. The color palette harkens back to simply elementary design. However, combined with clean geometric and abstract shapes, the UI still conceptualizes abstract ideas associated with academia and higher education.</p>
         </div>
-        <div class="col-lg-12 heading">
-          <img style="width: 100%; display: flex; margin: auto; padding-bottom: 50px;" src="images\userScenario.png" alt="">
-          </div> 
       </div>
     </div> 
-    <div class="container sectionHeading">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-        <a id="prototyping"><p class="heading1">Prototyping</p></a>
+        <div class="col-lg-12 ">
+          <p class="heading2">Prototyping</p>
         </div>
+        <div class="col-lg-6 ">
+          <p class="bodyText">Once we had decided on our core features for the app, we created a task flow diagram to map the various pages and how they would flow together. We realized that although we had been talking about the functionality extensively, we were envisioning slightly different ways to execute the prototype. This stage allowed the team to talk through important details and arrive at the best solutions. With our task flow complete, we were ready to develop our low-fidelity prototype which we would use to perform user testing. 
+          </p>
+        </div>
+        <div class="col-lg-6">
+              <a href="images\PlantThat\ProcessFlow.png" data-toggle="lightbox" target="blank"><img class="image"; src="images\PlantThat\ProcessFlow.png" alt=""></a>
+        </div> 
       </div>
-    </div>
-    <br>
+ </div> 
   <div class="container">
-      <div class="row narrow">
-        <div class="cardContainer col-lg-3 col-sm-12">
-          <div class="card">
-            <a href="images/tgWireframe3.png" data-toggle="lightbox" target="blank"><img class="image" src="images/tgWireframe3.png" class="card-img-top" alt="..."></a>
-            <div class="card-bodyText">
-              <p class="cardTitle"></p>
-            </div>
-          </div>
+      <div class="row narrow text-center">
+        <div class="col-lg-3 col-sm-12">
+            <a href="images\PlantThat\loResAddPlant.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\PlantThat\loResAddPlant.svg" class="card-img-top" alt="..."></a>
         </div>
-        <div class="cardContainer col-lg-3 col-sm-12">
-          <div class="card">
-            <a href="images\tgwireframe.png" data-toggle="lightbox" target="blank"><img class="image" src="images\tgwireframe.png" class="card-img-top" alt="..."></a>
-            <div class="card-bodyText">
-              <p class="cardTitle"></p>
-            </div>
-          </div>
+        <div class="col-lg-3 col-sm-12">
+            <a href="images\PlantThat\loResMyPlants.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\PlantThat\loResMyPlants.svg" class="card-img-top" alt="..."></a>
         </div>
-        <div class="cardContainer col-lg-3 col-sm-12">
-          <div class="card">
-            <a href="images\tgMidWireframe2.png" data-toggle="lightbox" target="blank"><img class="image" src="images\tgMidWireframe2.png" class="card-img-top" alt="..."></a>
-            <div class="card-bodyText">
-              <p class="cardTitle"></p>
-            </div>
-          </div>
+        <div class="col-lg-3 col-sm-12">
+            <a href="images\PlantThat\loResMaintLog.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\PlantThat\loResMaintLog.svg" class="card-img-top" alt="..."></a>
         </div>
-        <div class="cardContainer col-lg-3 col-sm-12">
-          <div class="card">
-            <a href="images\tgMidWireframe.png" data-toggle="lightbox" target="blank"><img class="image" src="images\tgMidWireframe.png" class="card-img-top" alt="..."></a>
-            <div class="card-bodyText">
-              <p class="cardTitle"></p>
-            </div>
-          </div>
+        <div class="col-lg-3 col-sm-12">
+            <a href="images\PlantThat\loResMenu.svg" data-toggle="lightbox" target="blank"><img class="image" src="images\PlantThat\loResMenu.svg" class="card-img-top" alt="..."></a>
         </div>
       </div>
   </div>
+  
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 heading ">
-        <img class="image order-sm-1"; style="width: 100%;" src="images\testingFeedback.jpg" alt="">
-      </div> 
-      <div class="col-lg-6">
-        <a id=testing><p class="heading1 order-lg-2">User Testing</p></a><p class="bodyText">The objective for my guerilla testing was to determine if users can successfully create a trip, find the favorites section, add an itinerary to their trip, and apply filters to their search. I tested these tasks as they are the primary function of the app, and the usability of these features is key to ensuring users will repeatedly use the app for travel.</p>
-      </div>
+        <div class="col-lg-12">
+          <a id=testing><p class="heading2">User Testing</p></a>
+        </div>
+        <div class="col-lg-6">
+          
+          <p class="bodyText">We conducted usability testing with five individuals to discover how the experience was for the user and find weak spots in the design. The primary objective was to determine if they could accomplish three main tasks:</p>
+          <ol class="bodyText" style="padding-left: 10%">
+            <li>Use the app to look up a Monstera plant and add it to “My Plants”</li>
+            <li>Update the Monstera plant to show that you watered it today</li>
+            <li>Navigate to the page where you'll find an overview of how to care for the Monstera plant</li>
+          </ol>
+        </div>
+    
+        <div class="col-lg-3 d-flex align-items-center justify-content-center" align="center">
+          <a href="images\PlantThat\hiResMyPlants2.png" data-toggle="lightbox" target="blank"><img class="image card-img-top" style="max-width: 100%;" src="images\PlantThat\hiResMyPlants2.png" alt=""></a>
+        </div>
+        <div class="col-lg-3 d-flex align-items-center justify-content-center"  align="center">
+          <a href="images\PlantThat\hiResMenu.svg" data-toggle="lightbox" target="blank" style="width: 100%;"><img class="image card-img-top" style="width: 100%; margin:0" src="images\PlantThat\hiResMenu.png" alt=""></a>
+        </div>
+        <div class="col-lg-12">
+          <p class="bodyText" style="padding-bottom: 20px">The most important finding from the testing was that users were confused by having “Maintenance Log” in a separate section from “My Plants”. The maintenance page was hard to find while the user was organically maneuvering through the app. As a result, we decided to integrate the two sections of the prototype to create a more streamlined user flow. This allowed us to simplify the design of the product, while creating a better experience for the user. </p>
+        </div>
     </div>
   </div>
 
   <div class="container">
-    <div class="row narrow">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12">
+          <a id=outcome><p class="heading2">Outcome</p></a>
+      </div>
       <div class="col-lg-6 col-sm-12">
-        <br>
-        <div class="card">
-          <a id=outcome><p class="heading1">Outcome</p></a>
-          <p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <button class="standardButton" style="max-width: 90%;">View High-Fidelity Prototype</button>
-        </div>
+          <p class="bodyText">We set out to create an app that would help users be more successful with their plant growing. Along the way, we found that a simpler product with fewer features and screens was the most helpful and easy to use. The end product is a high-fidelity prototype that could be developed as a user-centered mobile application. </p>
+          <div class="text-center"><button class="standardButton" style="max-width: 90%;">View High-Fidelity Prototype</button></div>
       </div>
-      <div class="cardContainer col-lg-3 col-sm-12">
-        <br>
-        <div class="card">
-          <img class="image" src="images/TG_HiResSplash.png" class="card-img-top" alt="...">
-        </div>
+      <div class="col-lg-3 col-sm-12 align-items-center">
+          <img class="image" style="width: 100%; margin:0" src="images\PlantThat\hiResSplash.svg" class="" alt="...">
       </div>
-      <div class="cardContainer col-lg-3 col-sm-12">
-        <br>
-        <div class="card">
-          <img class="image" src="images/TG_HiResItinerary.png" class="card-img-top" alt="...">
-        </div>
+      <div class="col-lg-3 col-sm-12">
+          <img class="image" src="images\PlantThat\hiResHome.png" class="" alt="...">
       </div>
       <!-- <div class="cardContainer col-lg-3 col-sm-12">
         <br>
@@ -275,26 +331,20 @@
       </div> -->
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <p class="heading1">Final Thoughts</p><p class="bodyText">When we began researching for this project, I was surprised to find that the average user values and enjoys some spontaneity while they are traveling. Based on the research, I believe people will continue to migrate towards a more spontaneous mode of travelling since smartphones put the power in the users hands to make decisions in the moment.</p> <p class="bodyText">Although this app addresses a user need, there is a great deal of opportunity to expand the offerings in the future. A few such opportunities include integration with ride sharing apps like Lyft and Uber, purchasing capabilities, and personality profiles to enable user suggestions.</p>
-      </div>
-    </div>
-  </div>
-<br>
-<br>
-<br>
-<br>
 
-<footer class="footer center">
-  <ul class=ul>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
-  </ul>
-</footer>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <footer class="footer center">
+    <ul class=ul>
+        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
+        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
+        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
+        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
+    </ul>
+  </footer>
 
 
 
