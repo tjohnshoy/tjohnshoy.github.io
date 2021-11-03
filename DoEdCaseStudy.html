@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css\CaseStudyStyle.css" rel="stylesheet" type="text/css">
     <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link href="css\homeflex.css" rel="stylesheet" type="text/css">
 
     <script>
         // When the user scrolls the page, execute myFunction
@@ -30,48 +31,44 @@
     
   </head>
 <body>  
-    
-        <nav role="navigation">
-            <div id="menuToggle">
-                <!--
-                A fake / hidden checkbox is used as click reciever,
-                so you can use the :checked selector on it.
-                -->
-                <input class="menuCheckbox" type="checkbox" />
-                
-                <!--
-                Some spans to act as a hamburger.
-                -->
-                <span></span>
-                <span></span>
-                <span></span>
+  <div>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input class="menuCheckbox" type="checkbox" />
             
-                <ul id="menu">
-                    <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
-                    <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
-                    <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
-                    <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
-                </ul>
-            </div>
+            <!--
+            Some spans to act as a hamburger.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
+                <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+    <header class="navigation">
+        <nav>
+            <ul class="topMenu inlineFlex text-decoration-none">
+                <div class="logo"><a href="https://tjohnshoy.github.io/index.html" style="border-bottom: transparent; padding: 0;" ><img src=images\logo.svg style="border-bottom: none; padding: 0;"; width="65px"></a></div>
+                <li><a href="https://tjohnshoy.github.io/index.html" class="active text-decoration-none">home</a></li>
+                <li><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>      
+                <li><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
+            </ul>
         </nav>
-        <header class="navigation sticky-top">
-            <div class="inline-block logo">
-              <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg style="border-bottom: none !important"; width="80px">
-              </div>
-            <nav class="inline-block">
-                <ul class="topMenu">
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/index.html" class="hover text-decoration-none">home</a></li>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover text-decoration-none">skills</a></li>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    
+    </header>
+
     
   
   <div class="container">
-      <div class="row" style="margin-top: 50px;">
+      <div class="row" style="margin-top:50px">
           <div class="col-lg-6">
             <p class="heading1" >US Department of Education Redesign</p>
             <div class="summary">
@@ -323,7 +320,7 @@
           <a id=outcome><p class="heading2">Outcome</p></a>
       </div>
       <div class="col-lg-6 col-sm-12">
-          <p class="bodyText">We set out to create an app that would help users be more successful with their plant growing. Along the way, we found that a simpler product with fewer features and screens was the most helpful and easy to use. The end product is a high-fidelity prototype that could be developed as a user-centered mobile application. </p>
+          <p class="bodyText">The Department of Educations Ed.gov site was chosen for this project due to the range of opportunities for improvement to the UX, UI and the information architecture. The results of the redesign address the major user pain points in an elegant format. The UI overhaul offers a more minimalistic and beautiful experience while maintaining the tone of a governmental website.</p>
           <div class="text-center"><button class="standardButton" style="max-width: 90%;">View High-Fidelity Prototype</button></div>
       </div>
       <div class="col-lg-6 col-sm-12 align-items-center">
@@ -349,14 +346,13 @@
   <br>
   <br>
 
-  <footer class="footer center">
-    <ul class=ul>
-        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
-        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
-        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
-        <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
+  <footer class="footer">
+    <ul class="inlineFlex">
+        <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
+        <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
+        <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
     </ul>
-  </footer>
+</footer>
 
 
 

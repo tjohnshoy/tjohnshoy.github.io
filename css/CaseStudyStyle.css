@@ -26,7 +26,7 @@
     overflow: auto;
 }
 .summary .bodyText   {
-    font-size: 18px;
+    font-size: 15px;
     vertical-align: top;
     font-style: italic;
     color: rgb(53, 53, 53);
@@ -54,6 +54,10 @@
     height: auto;
 }
 
+.illIcon    {
+    max-width: 80%;    
+}
+
 .sideImage  {
     max-width: 100%;
     margin: auto;
@@ -61,6 +65,9 @@
     height: auto;
 }
 
+.card-img-top   {
+    max-height: 35%;
+}
 
 .designProcess  {
     max-width: 800px;

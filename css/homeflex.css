@@ -3,10 +3,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 15vh;
+    padding: 25vh 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 45%;
+    max-width: 70%;
     min-width: 800px;
     justify-content: left;
 }
@@ -18,16 +18,16 @@
     justify-content: flex-end;
     margin-top: 40px;
 }
+
 * {
     box-sizing: border-box;
   }
   
 .homeGrid {
-  padding-top: 100px;
   height: 100%;
 }
   .wrapper {
-    display: flex;
+    display: none;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 16vh;
@@ -37,7 +37,6 @@
     flex-wrap:wrap;
     gap: 40px;
   }
-  
   .card {
     width: 30%;
     height: 300px;
@@ -174,14 +173,26 @@
     display: none;
 }
 
-.h2 {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.homeView {
+  background-color: rgb(253, 251, 247);
+}
+.container1 {
+  background: url(../images/Travelgistics/tgHero.png)  no-repeat;
+  max-width: 50%;
 
+  overflow: hidden;
+  color: #FFFFFF
+}
+.row1{
+  background: rgba(39,62,84,0.82);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
 }
 
-
+.desktopHome  {
+  padding-bottom: 100px;
+}
 @media only screen and (max-width: 1024px) {
     
     
@@ -262,8 +273,11 @@
       }
       .h2   {
         max-width: 78%;
-
       }
+      .homeView {
+        background-color: transparent;
+      }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -300,129 +314,140 @@
         "secondaryButton"
         "illustration"
         }
-    .skill1 {
-        margin-top: 20px;
-    }
-    .subTitle   {
-            margin: 0px 10px 0px 0px;
-            font-size: 27px;
-        }
-
-    .illustration    {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            margin-bottom: 30px;
-            padding-right: 10px;
-            max-width: 100%;
-            height: auto;
-        }
-    #myBtn {
-        visibility: hidden;
-    }
-    .bodyContent    {
-        font-size: 20px;
-        margin: 10px 0px 0px 0px;
-    }
-
-    * {
-        box-sizing: border-box;
-      }
+        .heading {
+          margin-top: 5%;
+         }
       
-      .wrapper {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 17vh;
-        max-width: 75%;
-        margin-right: auto;
-        margin-left: auto;
-        flex-wrap:wrap;
-        gap: 0px;
+      .skill1 {
+          margin-top: 20px;
       }
-      .info .h2  {
-        display:none
-    }
-      .info p  {
-        display:none
-    }
-  
-      .card {
-        width: 100%;
-        height: 335px;
-        border-radius: 15px 15px 0px 0px;
-        padding: 1.5rem;
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        transition: 0.4s ease-out;
-        margin-bottom: 0px;
-        box-shadow: none;
+      .subTitle   {
+              margin: 0px 10px 0px 0px;
+              font-size: 27px;
+          }
+
+      .illustration    {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 0px;
+              margin-bottom: 30px;
+              padding-right: 10px;
+              max-width: 100%;
+              height: auto;
+          }
+      #myBtn {
+          visibility: hidden;
       }
-      .card:hover {
-        transform: translateY(0px);
+      .bodyContent    {
+          font-size: 20px;
+          margin: 10px 0px 0px 0px;
       }
 
-      .card:before {
-        background: rgba(0, 0, 0, 0.0);
-      }
-      .card img {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: fill;
-           object-fit: cover;
-        position: absolute;
-        bottom: 0%;
-        left: 0;
-        border-radius: 15px 15px 0px 0px;
-      }
-      .card .info {
-        position: relative;
-        z-index: 3;
-        color: white;
-        opacity: 1;
-      }
-        .cardBottom {
-            display: block;
-            flex-wrap: wrap;
-            background: rgba(255, 83, 61);
-            height: 100%;
-            width: 100%;
-            border-radius: 0px 0px 15px 15px;
-            margin-bottom: 40px;
-            box-shadow: 0px 7px 10px rgb(0 0 0 / 20%);
-            overflow: auto;
+      * {
+          box-sizing: border-box;
         }
-        .cardBottom .h2 {
-            display: flex;
-            padding: 15px 0px 0px 20px;
-            margin: 0px;
-            max-width: 90%;
+        
+        .wrapper {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 17vh;
+          max-width: 75%;
+          margin-right: auto;
+          margin-left: auto;
+          flex-wrap:wrap;
+          gap: 0px;
         }
-      .card .info .h2 {
-        margin-bottom: 10px;
+        .info .h2  {
+          display:none
       }
-      .card .info  {
-        letter-spacing: 1px;
-        font-size: 15px;
-        margin-top: 0px;
+        .info p  {
+          display:none
       }
-      .card .info button {
-        display: none;
-      }
-      button {
-        padding: 0.6rem;
-        outline: none;
-        border: none;
-        border-radius: 3px;
-        background: #18233E;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        transition: 0.4s ease;
-        margin: 10px 0px 20px 20px;
-      }   
+    
+        .card {
+          width: 100%;
+          height: 335px;
+          border-radius: 15px 15px 0px 0px;
+          padding: 1.5rem;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          transition: 0.4s ease-out;
+          margin-bottom: 0px;
+          box-shadow: none;
+        }
+        .card:hover {
+          transform: translateY(0px);
+        }
 
+        .card:before {
+          background: rgba(0, 0, 0, 0.0);
+        }
+        .card img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: fill;
+            object-fit: cover;
+          position: absolute;
+          bottom: 0%;
+          left: 0;
+          border-radius: 15px 15px 0px 0px;
+        }
+        .card .info {
+          position: relative;
+          z-index: 3;
+          color: white;
+          opacity: 1;
+        }
+          .cardBottom {
+              display: block;
+              flex-wrap: wrap;
+              background: rgba(255, 83, 61);
+              height: 100%;
+              width: 100%;
+              border-radius: 0px 0px 15px 15px;
+              margin-bottom: 40px;
+              box-shadow: 0px 7px 10px rgb(0 0 0 / 20%);
+              overflow: auto;
+          }
+          .cardBottom .h2 {
+              display: flex;
+              padding: 15px 0px 0px 20px;
+              margin: 0px;
+              max-width: 90%;
+          }
+        .card .info .h2 {
+          margin-bottom: 10px;
+        }
+        .card .info  {
+          letter-spacing: 1px;
+          font-size: 15px;
+          margin-top: 0px;
+        }
+        .card .info button {
+          display: none;
+        }
+        button {
+          padding: 0.6rem;
+          outline: none;
+          border: none;
+          border-radius: 3px;
+          background: #18233E;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 0.4s ease;
+          margin: 10px 0px 20px 20px;
+        }   
+        .homeView {
+          background-color: transparent;
+        }
+        .desktopHome  {
+          visibility: hidden;
+          height: 0px;
+        }
+ 
      
 }
       

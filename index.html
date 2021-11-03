@@ -34,160 +34,254 @@ function myFunction() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css\homeflex.css" rel="stylesheet" type="text/css">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>  
+    <div class="homeView">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input class="menuCheckbox" type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
 
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input class="menuCheckbox" type="checkbox" />
-            
-            <!--
-            Some spans to act as a hamburger.
-            -->
-            <span></span>
-            <span></span>
-            <span></span>
-        
-            <ul id="menu">
-                <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
-                <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
-                <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
-                <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
-            </ul>
-        </div>
-    </nav>
-    <header class="navigation sticky" id="myHeader">
-        <div class="inline-block logo">
-            <img src=images\logo.svg width="80px">
-        </div>
-        <nav class="inline-block">
-            <ul class="topMenu">
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/myWork.html" class="active">home</a></li>
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover">about</a></li>
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover">skills</a></li>
-                <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="hover">contact</a></li>
-            </ul>
+                <ul id="menu">
+                    <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
+                    <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                    <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
         </nav>
-    </header>
-<div>
+        <header class="navigation sticky">
+            <nav>
+                <ul class="topMenu inlineFlex text-decoration-none">
+                    <div class="logo"><a href="https://tjohnshoy.github.io/index.html" style="border-bottom: transparent; padding: 0;" ><img src=images\logo.svg style="border-bottom: none; padding: 0;"; width="65px"></a></div>
+                    <li><a href="https://tjohnshoy.github.io/index.html" class="active text-decoration-none">home</a></li>
+                    <li><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>      
+                    <li><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- <div style="background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, rgba(255,255,255,1)); object-fit: fill; height: 80vh;"> -->
 
-    <div>
         <div class="homeGrid" style="height: 100%; ">
-            <section class="flexcontainer">
-                <div class=heading>
-                    <div class="h1" style="margin-bottom: 5px; ">Tena Johnshoy Barasa
-                            <p class="h2"style="margin:10px 0px;">UX | UI Designer</p>
-                    </div>
-                    
-                    <div style="display: flex; width: 90%;">
-                        <form method="get" action="https://tjohnshoy.github.io/RESUME%20-%20Google%20Docs.pdf" target="blank" style="margin-right: 1em; width: 50%;"><button type="submit">View Resume</button></form>
-                        <form method="get" action="https://tjohnshoy.github.io//contact.html" style="width: 50%;"><button type="submit">Contact Me</button></form>
-                        <!-- <p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="standardButton">View Resume</span></a></p>
-                        <p><a href="https://tjohnshoy.github.io/contact.html"><span class="secondaryButton">Contact Me</span></a></p> -->
-                    </div>
-                </div>
-                <div class=illustration>
-                    <img src="images\undraw_design_feedback_dexe (1).svg" class="illustration">
-                </div>                
-            </section>
+                    <section class="flexcontainer">
+                        <div class=heading>
+                            <div class="h1" style="margin-bottom: 5px; ">Tena Johnshoy Barasa
+                                    <p class="h2"style="margin:10px 0px;">UX | UI Designer</p>
+                            </div>
+                            <div style="display: flex; width: 90%;">
+                                <form method="get" action="https://tjohnshoy.github.io/RESUME%20-%20Google%20Docs.pdf" target="blank" style="margin-right: 1em; width: 50%;"><button type="submit">View Resume</button></form>
+                                <form method="get" action="https://tjohnshoy.github.io//contact.html" style="width: 50%;"><button type="submit">Contact Me</button></form>
+                                <!-- <p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="standardButton">View Resume</span></a></p>
+                                <p><a href="https://tjohnshoy.github.io/contact.html"><span class="secondaryButton">Contact Me</span></a></p> -->
+                            </div>
+                        </div>
+                        <div class=illustration>
+                            <img src="images\undraw_design_feedback_dexe (1).svg" class="illustration">
+                        </div>                
+                    </section>
         </div> 
     </div>
-    </div>
-    </div>
 </div>
-        <P class="h2 flexcontainer" style="padding-bottom: 20px;">My Work</p>
-        <div class="wrapper">
-            <div class="card"><img src="https://tjohnshoy.github.io/images/PlantThat/ptHero.png" />
-                <div class="info">
-                    <div class="h2" style="color: white;">PlantThat</div>
-                    <p>An app that empowers users to successfully nurture plants.</p><form method="get" action="https://tjohnshoy.github.io//PlantThatCaseStudy.html"></p><button>Learn More</button></form>
-                </div>
-            </div>
-            <div class=cardBottom>
-                <p class="h2" style="color: white;">PlantThat Case Study</p>
-                <form method="get" action="https://tjohnshoy.github.io//PlantThatCaseStudy.html"><button type="submit">Learn More</button></form>
-            </div>
-            <div class="card"><img src="https://tjohnshoy.github.io/images/Travelgistics/tgHero.png">
-                <div class="info">
-                    <div class="h2" style="color: white;">Travelgistics</div>
-                    <p>Travel planning made simple with curated itineraries, maps and reviews.</p><form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
-                </div>
-            </div>
-            <div class=cardBottom>
-                <p class="h2" style="color: white;">Travelgistics Case Study</p>
-                <form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
-            </div>
-            
-            <div class="card"><img src="https://tjohnshoy.github.io/images/DeptOfEd/desktopView.png" />
-                <div class="info">
-                    <div class="h2" style="color: white;">Department of Education</div>
-                    <p>A case study redesign to overhaul the UI and improve usability.</p><form method="get" action="https://tjohnshoy.github.io//DoEdCaseStudy.html"></p><button>Learn More</button></form>
-                </div>
-            </div>
-            <div class=cardBottom>
-                <p class="h2" style="color: white;">Dept of Education Case Study</p>
-                <form method="get" action="https://tjohnshoy.github.io//DoEdCaseStudy.html"><button type="submit">Learn More</button></form>
-            </div>
-            
 
-            
-            <!-- <div class="card"><img src="https://tjohnshoy.github.io/images/SuperU/SUMobileView.png">
-                <div class="info">
-                    <div class="h2" style="color: white;">SuperU</div>
-                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><form method="get" action="https://tjohnshoy.github.io//SuperUCaseStudy.html"><button type="submit">Learn More</button></form>
+            <div class="container mainLayout d-flex justify-content-center desktopHome">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img class="float-right" src="images\Travelgistics\tgHero.png" style="max-width: 95%;" alt="Travelgistics app">
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p class="h3 info" style="padding-bottom:20px">Featured Work </p>
+                        <p class="h2 text-right">Travelgistics </p>
+                        <p class="h2 text-right" style="padding-bottom:20px">Travel on Your Terms</p>
+                        <p class="p" style="max-width: 100%; padding-bottom:20px">Travel planning made simple with curated itineraries, maps and reviews.</p>
+                        <a href="tgCaseStudy.html"><p class="h3" style="display: inline-block; padding-right: 15px; ">View the Case Study</p><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
+                    </div>
                 </div>
             </div>
-       
-                <p class="h2" style="color: white;">SuperU Case Study</p>
-                <form method="get" action="https://tjohnshoy.github.io//SuperUCaseStudy.html"><button type="submit">Learn More</button></form>
-            </div>
-            
-            <div class="card"><img src="C:\Users\tjohn\OneDrive\Documents\Design\GitHub\tjohnshoy.github.io\images\EdWebView.png" />
-                <div class="info">
-                    <div class="h2" style="color: white;">NW Family Resource Collaborative</div>
-                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Learn More</button>
-                </div>
-            </div>
-            <div class=cardBottom>
-                <p class="h2" style="color: white;">NW Family Resource Collaborative</p>
-                <form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
-            </div>
-            <div class="card"><img src="C:\Users\tjohn\OneDrive\Documents\Design\GitHub\tjohnshoy.github.io\images\PtMobileView.png" />
-                <div class="info">
-                    <div class="h2" style="color: white;">Department of Health</div>
-                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Learn More</button>
-                </div>
-            </div>
-            <div class=cardBottom>
-                <p class="h2" style="color: white;">Dept of Health Case Study</p>
-                <form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
-            </div>
-        </div> -->
 
+            <div class="container mainLayout d-flex justify-content-center desktopHome">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p class="h2">PlantThat</p>
+                        <p class="h2" style="padding-bottom:20px">Your Plant Companion</p>
+                        <p class="p" style="max-width: 100%; padding-bottom:20px">Travel planning made simple with curated itineraries, maps and reviews.</p>
+                        <a href="tgCaseStudy.html"><p class="h3" style="display: inline-block; padding-right: 15px; ">View the Case Study</p><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="float-right" src="images\PlantThat\ptHero.png" style="max-width: 95%;" alt="Travelgistics app">
+                    </div>
+                </div>
+            </div>
+            <div class="container mainLayout d-flex justify-content-center desktopHome">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img class="float-right" src="images\DeptOfEd\desktopView.png" style="max-width: 95%;" alt="Travelgistics app">
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p class="h2 text-right">Department of Education Redesign Case Study</p>
+                        <p class="p" style="max-width: 100%; padding-bottom:20px">Travel planning made simple with curated itineraries, maps and reviews.</p>
+                        <a href="tgCaseStudy.html"><p class="h3" style="display: inline-block; padding-right: 15px; ">View the Case Study</p><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="wrapper">
+                <div class="card"><img src="https://tjohnshoy.github.io/images/PlantThat/ptHero.png" />
+                    <div class="info">
+                        <div class="h2" style="color: white;">PlantThat</div>
+                        <p>An app that empowers users to successfully nurture plants.</p><form method="get" action="https://tjohnshoy.github.io//PlantThatCaseStudy.html"></p><button>Learn More</button></form>
+                    </div>
+                </div>
+                <div class=cardBottom>
+                    <p class="h2" style="color: white;">PlantThat Case Study</p>
+                    <form method="get" action="https://tjohnshoy.github.io//PlantThatCaseStudy.html"><button type="submit">Learn More</button></form>
+                </div>
+                <div class="card"><img src="https://tjohnshoy.github.io/images/Travelgistics/tgHero.png">
+                    <div class="info">
+                        <div class="h2" style="color: white;">Travelgistics</div>
+                        <p>Travel planning made simple with curated itineraries, maps and reviews.</p><form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
+                    </div>
+                </div>
+                <div class=cardBottom>
+                    <p class="h2" style="color: white;">Travelgistics Case Study</p>
+                    <form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
+                </div>
+                
+                <div class="card"><img src="https://tjohnshoy.github.io/images/DeptOfEd/desktopView.png" />
+                    <div class="info">
+                        <div class="h2" style="color: white;">Department of Education</div>
+                        <p>A case study redesign to overhaul the UI and improve usability.</p><form method="get" action="https://tjohnshoy.github.io//DoEdCaseStudy.html"></p><button>Learn More</button></form>
+                    </div>
+                </div>
+                <div class=cardBottom>
+                    <p class="h2" style="color: white;">Dept of Education Case Study</p>
+                    <form method="get" action="https://tjohnshoy.github.io//DoEdCaseStudy.html"><button type="submit">Learn More</button></form>
+                </div> 
+            </div>           
+                <!-- <div class="card"><img src="https://tjohnshoy.github.io/images/SuperU/SUMobileView.png">
+                    <div class="info">
+                        <div class="h2" style="color: white;">SuperU</div>
+                        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><form method="get" action="https://tjohnshoy.github.io//SuperUCaseStudy.html"><button type="submit">Learn More</button></form>
+                    </div>
+                </div>
+           
+                    <p class="h2" style="color: white;">SuperU Case Study</p>
+                    <form method="get" action="https://tjohnshoy.github.io//SuperUCaseStudy.html"><button type="submit">Learn More</button></form>
+                </div>
+                
+                <div class="card"><img src="C:\Users\tjohn\OneDrive\Documents\Design\GitHub\tjohnshoy.github.io\images\EdWebView.png" />
+                    <div class="info">
+                        <div class="h2" style="color: white;">NW Family Resource Collaborative</div>
+                        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Learn More</button>
+                    </div>
+                </div>
+                <div class=cardBottom>
+                    <p class="h2" style="color: white;">NW Family Resource Collaborative</p>
+                    <form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
+                </div>
+                <div class="card"><img src="C:\Users\tjohn\OneDrive\Documents\Design\GitHub\tjohnshoy.github.io\images\PtMobileView.png" />
+                    <div class="info">
+                        <div class="h2" style="color: white;">Department of Health</div>
+                        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Learn More</button>
+                    </div>
+                </div>
+                <div class=cardBottom>
+                    <p class="h2" style="color: white;">Dept of Health Case Study</p>
+                    <form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
+                </div>-->
+   
+            <div class="container mainLayout">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <P class="h2">My Skills</p>
+                    </div>
+                </div>
+            </div>
     
-    </div>
-  
+            <div class="container mainLayout" >
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top"  src="images\Home\undraw_static_website_0107.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">Front-end Development</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top"  src="images\Home\undraw_destinations_fpv7.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">Journey Mapping & Storyboarding</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top"  src="images\Home\undraw_composition_re_4o4o.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">Material Design</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top" src="images\Home\undraw_split_testing_l1uw.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">Product Testing</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top"  src="images\Home\userInterface.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">Prototyping</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top" src="images\Home\programs.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">Prototyping Software</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top"  src="images\Home\undraw_hire_re_gn5j.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">Research & Persona Development</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top"  src="images\Home\undraw_redesign_feedback_re_jvm0.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">UI & Graphic Design</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img class="card-img-top"  src="images\Home\undraw_design_sprint_re_tke3.svg" alt="Card image cap">
+                        <div class="card-body flex-column d-flex">
+                            <h5 class="card-title mt-4 text-center">Wireframing</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
 
 
-    <footer class="footer center">
-        <ul class=ul>
-            <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
-            <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
-            <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
-            <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
+    <footer class="footer">
+        <ul class="inlineFlex">
+            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
+            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
+            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
         </ul>
-      </footer>
+    </footer>
 </body>
 
 <script src= "https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+
 
 </html>

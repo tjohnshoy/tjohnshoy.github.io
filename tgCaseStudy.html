@@ -31,42 +31,39 @@
   </head>
 <body>  
     
-        <nav role="navigation">
-            <div id="menuToggle">
-                <!--
-                A fake / hidden checkbox is used as click reciever,
-                so you can use the :checked selector on it.
-                -->
-                <input class="menuCheckbox" type="checkbox" />
-                
-                <!--
-                Some spans to act as a hamburger.
-                -->
-                <span></span>
-                <span></span>
-                <span></span>
+  <div>
+    <nav role="navigation" >
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input class="menuCheckbox" type="checkbox" />
             
-                <ul id="menu">
-                    <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
-                    <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
-                    <a href="https://tjohnshoy.github.io/mySkills.html"><li>Skills</li></a>
-                    <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
-                </ul>
-            </div>
+            <!--
+            Some spans to act as a hamburger.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
+                <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+    <header class="navigation">
+        <nav>
+            <ul class="topMenu inlineFlex text-decoration-none">
+                <div class="logo"><a href="https://tjohnshoy.github.io/index.html" style="border-bottom: transparent; padding: 0;" ><img src=images\logo.svg style="border-bottom: none; padding: 0;"; width="65px"></a></div>
+                <li><a href="https://tjohnshoy.github.io/index.html" class="active text-decoration-none">home</a></li>
+                <li><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>      
+                <li><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
+            </ul>
         </nav>
-        <header class="navigation sticky-top">
-            <div class="inline-block logo">
-              <a style="border-bottom:transparent" href="https://tjohnshoy.github.io/index.html"><img src=images\logo.svg style="border-bottom: none !important"; width="80px">
-              </div>
-            <nav class="inline-block">
-                <ul class="topMenu">
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/index.html" class="hover text-decoration-none">home</a></li>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/mySkills.html" class="hover text-decoration-none">skills</a></li>
-                    <li class="inline-block"><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    </header>
 
   <button id="myBtn" title="Go to top" style="display: block;"></button>
 
@@ -348,12 +345,11 @@
 <br>
 <br>
 
-<footer class="footer center">
-  <ul class=ul>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/mySkills.html" class="linkstyle">skills</a></li>
-      <li class="inline-block"><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
+<footer class="footer">
+  <ul class="inlineFlex">
+      <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
+      <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
+      <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
   </ul>
 </footer>
 
