@@ -23,9 +23,7 @@
     box-sizing: border-box;
   }
 
-  .homeGrid {
-    height: 100%;
-  }
+
   .wrapper {
     display: none;
     width: 100%;
@@ -365,7 +363,7 @@
           margin-left: auto;
           flex-wrap:wrap;
           gap: 0px;
-          padding-top: 80px;
+          padding-top: 40px;
         }
 
         .info h3  {
@@ -468,6 +466,7 @@
         .desktopHome  {
           visibility: hidden;
           height: 0px;
+          padding-bottom: 0;
         }
     
         
