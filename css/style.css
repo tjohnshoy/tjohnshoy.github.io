@@ -477,10 +477,9 @@ h4 {
       * Make this absolute positioned* at the top left of the screen */
       #menu      {
         position: absolute;
-        width: 500px;
-        margin: -100px 0 0 -50px;
+        width: 100vw;
+        margin: -77px 0 0 -30px;
         padding: 50px;
-        padding-top: 125px;
         display: block;
         background: #ededed;
         list-style-type: none;
