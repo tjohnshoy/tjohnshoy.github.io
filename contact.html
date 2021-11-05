@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="css\style.css" rel="stylesheet" type="text/css">
         <link href="css\contactstyle.css" rel="stylesheet" type="text/css">
 
@@ -42,7 +43,10 @@
                         <li><a href="https://tjohnshoy.github.io/contact.html" class="active text-decoration-none">contact</a></li>
                     </ul>
                 </nav>
-                </header>
+            </header>
+     
+        </div>
+       
         <section class="mainLayout">
             <h2 >Let's get in touch</h2> 
             <div class="flexContainer">
@@ -56,7 +60,7 @@
                     if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
                     return true; }</script>
 
-                    <table  style="width:100%;border:0; margin-bottom: 50px; margin-right: auto; margin-left: auto;" cellpadding="8" cellspacing="0">
+                    <table class="table-borderless"  style="width:100%;border:0; margin-bottom: 50px; margin-right: auto; margin-left: auto;" cellpadding="8" cellspacing="0">
                     <tr> <td>
                     <label for="Name">*Name:</label>
                     </td> <td>
@@ -85,9 +89,9 @@
                 </div>
                
                 <div class="rightSidebar">
-                    <p class="h5" style="padding: 0px 10px 0px 0px">EMAIL</p>
+                    <h5>EMAIL</h5>
                     <p class="sideText"> <a style="color: black;" href="mailto:tenajohnshoy@gmail.com"> tenajohnshoy@gmail.com</a></p>
-                    <p class="h5" style="padding: 0px 10px 0px 0px">PHONE</p>
+                    <h5>PHONE</h5>
                     <p class="sideText">(320) 424-1205</a></p>
 
                 </div>

@@ -13,10 +13,9 @@
 .sideText   {
     font-size: 15px;
     text-align: right;
-    padding: 0px 10px 0px 0px
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 
     .table  {
         grid-area: "table";
@@ -42,7 +41,6 @@
     .sideText   {
         font-size: 15px;
         text-align: left;
-        padding: 0px 0px 0px 0px;
         line-height: 6px;
     }
 }
