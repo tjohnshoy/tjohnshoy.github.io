@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Blooming Elegant Sans';
+    src: url('BloomingElegantSans.woff2') format('woff2'),
+        url('BloomingElegantSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css\CaseStudyStyle.css" rel="stylesheet" type="text/css">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    <link href="css\homeflex.css" rel="stylesheet" type="text/css">
+    <link rel="preload" href="BloomingElegantSans.woff2" as="font" type="font/woff2" crossorigin>
 
     <script>
         // When the user scrolls the page, execute myFunction
@@ -90,45 +90,45 @@
       </div>
   </div>  
 
-    <div class="container d-none d-lg-block border border-right-0 border-left-0">
-      <div class="row" style="margin-top: 65px; margin-bottom: 50px;" >
-        <div class="col-lg-2" style="display:block; margin:auto">
-        <a href="#research"><img style="max-height: 60px;display:block; margin:auto" src="images\users-solid.svg" alt=""></a>
-        <div>
-          <p class="sectionAnchor" style="padding-left: 0px"><a class="linkstyle" href="#research">Research</a></p>
-        </div>
-      </div> 
-      <div class="col-lg-2">
-        <a href="#definition"><img style="max-height: 60px;display:block; margin:auto" src="images\poll-solid.svg" alt=""></a>
-        <div>
-        <p class="sectionAnchor"><a class="linkstyle" href="#definition">Definition</a></p>
+  <div class="container d-none d-lg-block border border-right-0 border-left-0">
+    <div class="row" style="margin-top: 65px; margin-bottom: 50px;" >
+      <div class="col-lg-2" style="display:block; margin:auto">
+      <a href="#research"><img style="max-height: 60px;display:block; margin:auto" src="images\users-solid.svg" alt=""></a>
+      <div>
+        <p class="sectionAnchor" style="padding-left: 0px"><a class="linkstyle" href="#research">Research</a></p>
       </div>
-      </div> 
-      <div class="col-lg-2">
-        <a href="#ideation"><img style="max-height: 60px; display:block; margin:auto" src="images\brain-solid (1).svg" alt=""></a>
-        <p class="sectionAnchor"><a class="linkstyle" href="#ideation">Ideation</a></p>
-
-      </div>
-      <div class="col-lg-2">
-        <a href="#prototyping"><img style="max-height: 60px; display:block; margin:auto" src="images\mouse-pointer-solid.svg" alt=""></a>
-        <p class="sectionAnchor"><a class="linkstyle" href="#prototyping">Prototyping</a></p>
-
-      </div>
-      <div class="col-lg-2">
-        <a href="#testing"><img style="max-height: 60px; display:block; margin:auto" src="images\user-check-solid.svg" alt=""></a>
-        <p class="sectionAnchor"><a class="linkstyle" href="#testing">Testing</a></p>
-
-      </div> 
-      <div class="col-lg-2">
-        <a href="#outcome"><img style="max-height: 60px; display:block; margin:auto" src="images\store-solid.svg" alt=""></a>
-        <div>
-        <p class="sectionAnchor"><a class="linkstyle" href="#outcome">Outcome</a></p>
-      </div>
-      </div> 
+    </div> 
+    <div class="col-lg-2">
+      <a href="#definition"><img style="max-height: 60px;display:block; margin:auto" src="images\poll-solid.svg" alt=""></a>
+      <div>
+      <p class="sectionAnchor"><a class="linkstyle" href="#definition">Definition</a></p>
     </div>
-  </div>
+    </div> 
+    <div class="col-lg-2">
+      <a href="#ideation"><img style="max-height: 60px; display:block; margin:auto" src="images\brain-solid (1).svg" alt=""></a>
+      <p class="sectionAnchor"><a class="linkstyle" href="#ideation">Ideation</a></p>
 
-  <div class="container">
+    </div>
+    <div class="col-lg-2">
+      <a href="#prototyping"><img style="max-height: 60px; display:block; margin:auto" src="images\mouse-pointer-solid.svg" alt=""></a>
+      <p class="sectionAnchor"><a class="linkstyle" href="#prototyping">Prototyping</a></p>
+
+    </div>
+    <div class="col-lg-2">
+      <a href="#testing"><img style="max-height: 60px; display:block; margin:auto" src="images\user-check-solid.svg" alt=""></a>
+      <p class="sectionAnchor"><a class="linkstyle" href="#testing">Testing</a></p>
+
+    </div> 
+    <div class="col-lg-2">
+      <a href="#outcome"><img style="max-height: 60px; display:block; margin:auto" src="images\store-solid.svg" alt=""></a>
+      <div>
+      <p class="sectionAnchor"><a class="linkstyle" href="#outcome">Outcome</a></p>
+    </div>
+    </div> 
+  </div>
+</div>
+
+<div class="container">
     <div class="row" style="width: 95%;">
       <div class="dropdown">
         <button class="btn-lg dropdown-toggle" style="background-color: #18233e; color:#fff; width: 100%;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -214,11 +214,21 @@
         <div class="col-lg-12">
           <a id="ideation">
             <p class="heading2">Ideation</p></a>
-            <p class="bodyText">One problem we encountered in defining the parameters for the app was scope creep. The research and brainstorming process resulted in a long list of wish list items that had merit and were supported by our research findings. Given the timeline and resources allowed for the project, it was not feasible for us to build out all of these tools. To address the problem, we created a feature priority matrix and mapped out the effort versus impact for the various proposed features. This method allowed us to create a “short list” of manageable yet high impact offerings for the app. 
+        </div>
+        <div class="col-lg-6">
+            <p class="bodyText">One problem we encountered in defining the parameters for the app was scope creep. The research and brainstorming process resulted in a long list of wish list items that had merit and were supported by our research findings. Given the timeline and resources allowed for the project, it was not feasible for us to build out all of these tools. 
             </p>
-            <p class="bodyText">As a team, we experimented with storyboards to come up with a design flow that made sense for our user. We made iterations to our story in order to capture the most useful application of the product and to get the team on the same page before moving into the prototyping stage.  </p>
+        </div>
+        <div class="col-lg-6">
+            <img class="sideImage" src="images\PlantThat\PlantThatFeaturePrioritization.svg" alt="">
         </div>
         <div class="col-lg-12">
+          <p class="bodyText">To address the problem, we created a feature priority matrix and mapped out the effort versus impact for the various proposed features. This method allowed us to create a “short list” of manageable yet high impact offerings for the app. </p>
+        </div>
+    
+        <div class="col-lg-12">
+            <p class="bodyText">As a team, we experimented with storyboards to come up with a design flow that made sense for our user. We made iterations to our story in order to capture the most useful application of the product and to get the team on the same page before moving into the prototyping stage.  </p>
+        </div>
           <img style="width: 100%; display: flex; margin: auto; padding-bottom: 10px;" src="images\PlantThat\plSb1.png" alt="">
           <img class="image" src="images\PlantThat\plSb2.png" alt="">
 
