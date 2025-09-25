@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N18ZF9GP8T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N18ZF9GP8T');
+</script>
+   <meta property="og:title" content="Tena Johnshoy Barasa Portfolio" />
+<meta property="og:description" content="UX/UI Designer" />
+<meta property="og:url" content="https://tjohnshoy.github.io/" />
+<meta property="og:image" content="https://tjohnshoy.github.io/images/DeptOfEd/desktopView.png" />
+
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css\homeflex.css" rel="stylesheet" type="text/css">
+    <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+    <div class="homeView">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input class="menuCheckbox" type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu"> 
+                    <a href="https://tjohnshoy.github.io/home.html"><li>Home</li></a>
+                    <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
+                    <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+        <header class="navigation sticky">
+            <nav>
+                <ul class="topMenu inlineFlex text-decoration-none">
+                    <div class="logo"><a href="https://tjohnshoy.github.io/index.html" style="border-bottom: transparent; padding: 0;" ><img src=images\logo.svg style="border-bottom: none; padding: 0;"; width="65px"></a></div>
+                    <li><a href="https://tjohnshoy.github.io/home.html" class="active text-decoration-none">home</a></li>
+                    <li><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>      
+                    <li><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"  title="Go to top"></button>
+
+
+        <div class="homeGrid">
+            <section class="flexcontainer">
+                <div class=heading>
+                    <div class="h1" style="margin-bottom: 5px; ">Tena Johnshoy Barasa 
+                            <p class="h2"style="margin:10px 0px;">UX | UI Designer</p>
+                    </div>
+                    <div style="display: flex; width: 90%;">
+                        <form method="get" action="https://tjohnshoy.github.io/RESUME_5.19.23.pdf" target="blank" style="margin-right: 1em; width: 50%;"><button type="submit" class="standardButton">View Resume</button></form>
+                        <form method="get" action="https://tjohnshoy.github.io//contact.html" style="width: 50%;"><button type="submit" class="standardButton">Contact Me</button></form>
+                        <!-- <p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="standardButton">View Resume</span></a></p>
+                        <p><a href="https://tjohnshoy.github.io/contact.html"><span class="secondaryButton">Contact Me</span></a></p> -->
+                    </div>
+                </div>
+                <div class=illustration>
+                    <img src="images\undraw_design_feedback_dexe (1).svg" class="illustration">
+                </div>                
+            </section>
+        </div> 
+    </div>
+
+
+    <div class="container mainLayout d-flex justify-content-center desktopHome">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="float-right" src="images\Travelgistics\tgHero.png" style="max-width: 95%;" alt="Travelgistics app">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+                <h4 class="info" style="padding-bottom:20px">Featured Work</h4>
+                <h3 class="text-right">Travelgistics </h3>
+                <h3 class="text-right" >Travel on Your Terms</h3>
+                <p style="max-width: 100%; padding-bottom:20px">Travel planning made simple with curated itineraries, maps and reviews.</p>
+                <a href="tgCaseStudy.html"><h4 style="display: inline-block; padding-right: 15px; ">View the Case Study</h4><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mainLayout d-flex justify-content-center desktopHome">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h3>PlantThat</h3>
+                <h3>Your Plant Companion</h3>
+                <p style="max-width: 100%; padding-bottom:20px">An app that empowers users to successfully nurture plants.</p>
+                <a href="PlantThatCaseStudy.html"><h4 style="display: inline-block; padding-right: 15px; ">View the Case Study</h4><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                <img class="float-right" src="images\PlantThat\ptHero.png" style="max-width: 95%;" alt="Travelgistics app">
+            </div>
+        </div>
+    </div>
+    <div class="container mainLayout d-flex justify-content-center desktopHome">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="float-right" src="images\DeptOfEd\desktopView.png" style="max-width: 95%;" alt="Travelgistics app">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+                <h3 class="text-right">Department of Education Redesign Case Study</h3>
+                <p style="padding-bottom:20px">A case study redesign to overhaul the UI and improve usability.</p>
+                <a href="DoEdCaseStudy.html"><h4 style="display: inline-block; padding-right: 15px; ">View the Case Study</h4><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="card"><img src="https://tjohnshoy.github.io/images/PlantThat/ptHero.png" />
+            <div class="info">
+                <h3 style="color: white;">PlantThat</h3>
+                <p>An app that empowers users to successfully nurture plants.</p><form method="get" action="https://tjohnshoy.github.io//PlantThatCaseStudy.html"></p><button>Learn More</button></form>
+            </div>
+        </div>
+        <div class=cardBottom>
+            <h3 style="color: white;">PlantThat Case Study</h3>
+            <form method="get" action="https://tjohnshoy.github.io//PlantThatCaseStudy.html"><button type="submit">Learn More</button></form>
+        </div>
+        <div class="card"><img src="https://tjohnshoy.github.io/images/Travelgistics/tgHero.png">
+            <div class="info">
+                <h3 style="color: white;">Travelgistics</h3>
+                <p>Travel planning made simple with curated itineraries, maps and reviews.</p><form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
+            </div>
+        </div>
+        <div class=cardBottom>
+            <h3 style="color: white;">Travelgistics Case Study</h3>
+            <form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
+        </div>
+        
+        <div class="card"><img src="https://tjohnshoy.github.io/images/DeptOfEd/desktopView.png" />
+            <div class="info">
+                <h3 style="color: white;">Department of Education</h3>
+                <p>A case study redesign to overhaul the UI and improve usability.</p><form method="get" action="https://tjohnshoy.github.io//DoEdCaseStudy.html"></p><button>Learn More</button></form>
+            </div>
+        </div>
+        <div class=cardBottom>
+            <h3 style="color: white;">Dept of Education Case Study</h3>
+            <form method="get" action="https://tjohnshoy.github.io//DoEdCaseStudy.html"><button type="submit">Learn More</button></form>
+        </div> 
+    </div>           
+
+    <div class="container mainLayout">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>My Skills</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mainLayout" >
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top"  src="images\Home\undraw_static_website_0107.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">Front-end Development</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top"  src="images\Home\undraw_destinations_fpv7.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">Journey Mapping & Storyboarding</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top"  src="images\Home\undraw_composition_re_4o4o.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">Material Design</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top" src="images\Home\undraw_split_testing_l1uw.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">Product Testing</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top"  src="images\Home\userInterface.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">Prototyping</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top" src="images\Home\programs.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">Prototyping Software</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top"  src="images\Home\undraw_hire_re_gn5j.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">Research & Persona Development</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top"  src="images\Home\undraw_redesign_feedback_re_jvm0.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">UI & Graphic Design</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top"  src="images\Home\undraw_design_sprint_re_tke3.svg" alt="Card image cap">
+                <div class="card-body flex-column d-flex">
+                    <h4 class="card-title mt-4 text-center">Wireframing</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="inlineFlex">
+            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
+            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
+            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
+        </ul>
+    </footer>
+</body>
+<script src= "https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+<script src= "js/index.js"></script>
+<script src= "bootstrap.bundle.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+
+</html>

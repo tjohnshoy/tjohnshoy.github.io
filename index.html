@@ -1,263 +1,919 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N18ZF9GP8T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N18ZF9GP8T');
-</script>
-   <meta property="og:title" content="Tena Johnshoy Barasa Portfolio" />
-<meta property="og:description" content="UX/UI Designer" />
-<meta property="og:url" content="https://tjohnshoy.github.io/" />
-<meta property="og:image" content="https://tjohnshoy.github.io/images/DeptOfEd/desktopView.png" />
-
-<script>
-    // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="css\homeflex.css" rel="stylesheet" type="text/css">
-    <link href="css\style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>  
-    <div class="homeView">
-        <nav role="navigation">
-            <div id="menuToggle">
-                <!--
-                A fake / hidden checkbox is used as click reciever,
-                so you can use the :checked selector on it.
-                -->
-                <input class="menuCheckbox" type="checkbox" />
-                
-                <!--
-                Some spans to act as a hamburger.
-                -->
-                <span></span>
-                <span></span>
-                <span></span>
+    <title>Authenticate</title>
+    <style>
+        :root {
+            --font-size: 16px;
+            --background: #ffffff;
+            --foreground: oklch(0.145 0 0);
+            --card: #ffffff;
+            --card-foreground: oklch(0.145 0 0);
+            --popover: oklch(1 0 0);
+            --popover-foreground: oklch(0.145 0 0);
+            --primary: #030213;
+            --primary-foreground: oklch(1 0 0);
+            --secondary: oklch(0.95 0.0058 264.53);
+            --secondary-foreground: #030213;
+            --muted: #ececf0;
+            --muted-foreground: #717182;
+            --accent: #e9ebef;
+            --accent-foreground: #030213;
+            --destructive: #d4183d;
+            --destructive-foreground: #ffffff;
+            --border: rgba(0, 0, 0, 0.1);
+            --input: transparent;
+            --input-background: #f3f3f5;
+            --switch-background: #cbced4;
+            --font-weight-medium: 500;
+            --font-weight-normal: 400;
+            --ring: oklch(0.708 0 0);
+            --radius: 0.625rem;
+        }
 
-                <ul id="menu">
-                    <a href="https://tjohnshoy.github.io/index.html"><li>Home</li></a>
-                    <a href="https://tjohnshoy.github.io/about.html"><li>About</li></a>
-                    <a href="https://tjohnshoy.github.io/contact.html"><li>Contact</li></a>
-                </ul>
-            </div>
-        </nav>
-        <header class="navigation sticky">
-            <nav>
-                <ul class="topMenu inlineFlex text-decoration-none">
-                    <div class="logo"><a href="https://tjohnshoy.github.io/index.html" style="border-bottom: transparent; padding: 0;" ><img src=images\logo.svg style="border-bottom: none; padding: 0;"; width="65px"></a></div>
-                    <li><a href="https://tjohnshoy.github.io/index.html" class="active text-decoration-none">home</a></li>
-                    <li><a href="https://tjohnshoy.github.io/about.html" class="hover text-decoration-none">about</a></li>      
-                    <li><a href="https://tjohnshoy.github.io/contact.html" class="hover text-decoration-none">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"  title="Go to top"></button>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: var(--font-size);
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+        }
 
-        <div class="homeGrid">
-            <section class="flexcontainer">
-                <div class=heading>
-                    <div class="h1" style="margin-bottom: 5px; ">Tena Johnshoy Barasa 
-                            <p class="h2"style="margin:10px 0px;">UX | UI Designer</p>
-                    </div>
-                    <div style="display: flex; width: 90%;">
-                        <form method="get" action="https://tjohnshoy.github.io/RESUME_5.19.23.pdf" target="blank" style="margin-right: 1em; width: 50%;"><button type="submit" class="standardButton">View Resume</button></form>
-                        <form method="get" action="https://tjohnshoy.github.io//contact.html" style="width: 50%;"><button type="submit" class="standardButton">Contact Me</button></form>
-                        <!-- <p><a href="RESUME - Google Docs.pdf" target="_blank"><span class="standardButton">View Resume</span></a></p>
-                        <p><a href="https://tjohnshoy.github.io/contact.html"><span class="secondaryButton">Contact Me</span></a></p> -->
-                    </div>
-                </div>
-                <div class=illustration>
-                    <img src="images\undraw_design_feedback_dexe (1).svg" class="illustration">
-                </div>                
-            </section>
-        </div> 
-    </div>
+        /* Typography */
+        h1 {
+            font-size: 1.5rem;
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+        }
 
+        h2 {
+            font-size: 1.25rem;
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+        }
 
-    <div class="container mainLayout d-flex justify-content-center desktopHome">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <img class="float-right" src="images\Travelgistics\tgHero.png" style="max-width: 95%;" alt="Travelgistics app">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 text-right">
-                <h4 class="info" style="padding-bottom:20px">Featured Work</h4>
-                <h3 class="text-right">Travelgistics </h3>
-                <h3 class="text-right" >Travel on Your Terms</h3>
-                <p style="max-width: 100%; padding-bottom:20px">Travel planning made simple with curated itineraries, maps and reviews.</p>
-                <a href="tgCaseStudy.html"><h4 style="display: inline-block; padding-right: 15px; ">View the Case Study</h4><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
-            </div>
-        </div>
-    </div>
+        h3 {
+            font-size: 1.125rem;
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+        }
 
-    <div class="container mainLayout d-flex justify-content-center desktopHome">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <h3>PlantThat</h3>
-                <h3>Your Plant Companion</h3>
-                <p style="max-width: 100%; padding-bottom:20px">An app that empowers users to successfully nurture plants.</p>
-                <a href="PlantThatCaseStudy.html"><h4 style="display: inline-block; padding-right: 15px; ">View the Case Study</h4><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
-                <img class="float-right" src="images\PlantThat\ptHero.png" style="max-width: 95%;" alt="Travelgistics app">
-            </div>
-        </div>
-    </div>
-    <div class="container mainLayout d-flex justify-content-center desktopHome">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <img class="float-right" src="images\DeptOfEd\desktopView.png" style="max-width: 95%;" alt="Travelgistics app">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 text-right">
-                <h3 class="text-right">Department of Education Redesign Case Study</h3>
-                <p style="padding-bottom:20px">A case study redesign to overhaul the UI and improve usability.</p>
-                <a href="DoEdCaseStudy.html"><h4 style="display: inline-block; padding-right: 15px; ">View the Case Study</h4><i class="fa fa-chevron-right" style="color:#0F1626;" ></i></a>
-            </div>
-        </div>
-    </div>
+        p {
+            font-size: 1rem;
+            font-weight: var(--font-weight-normal);
+            line-height: 1.5;
+        }
 
-
-    <div class="wrapper">
-        <div class="card"><img src="https://tjohnshoy.github.io/images/PlantThat/ptHero.png" />
-            <div class="info">
-                <h3 style="color: white;">PlantThat</h3>
-                <p>An app that empowers users to successfully nurture plants.</p><form method="get" action="https://tjohnshoy.github.io//PlantThatCaseStudy.html"></p><button>Learn More</button></form>
-            </div>
-        </div>
-        <div class=cardBottom>
-            <h3 style="color: white;">PlantThat Case Study</h3>
-            <form method="get" action="https://tjohnshoy.github.io//PlantThatCaseStudy.html"><button type="submit">Learn More</button></form>
-        </div>
-        <div class="card"><img src="https://tjohnshoy.github.io/images/Travelgistics/tgHero.png">
-            <div class="info">
-                <h3 style="color: white;">Travelgistics</h3>
-                <p>Travel planning made simple with curated itineraries, maps and reviews.</p><form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
-            </div>
-        </div>
-        <div class=cardBottom>
-            <h3 style="color: white;">Travelgistics Case Study</h3>
-            <form method="get" action="https://tjohnshoy.github.io//tgCaseStudy.html"><button type="submit">Learn More</button></form>
-        </div>
+        /* Utility Classes */
+        .hidden { display: none !important; }
+        .flex { display: flex; }
+        .grid { display: grid; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .text-center { text-align: center; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-3 { gap: 0.75rem; }
+        .gap-4 { gap: 1rem; }
+        .space-y-1 > * + * { margin-top: 0.25rem; }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .space-y-6 > * + * { margin-top: 1.5rem; }
+        .w-full { width: 100%; }
+        .min-h-screen { min-height: 100vh; }
         
-        <div class="card"><img src="https://tjohnshoy.github.io/images/DeptOfEd/desktopView.png" />
-            <div class="info">
-                <h3 style="color: white;">Department of Education</h3>
-                <p>A case study redesign to overhaul the UI and improve usability.</p><form method="get" action="https://tjohnshoy.github.io//DoEdCaseStudy.html"></p><button>Learn More</button></form>
-            </div>
-        </div>
-        <div class=cardBottom>
-            <h3 style="color: white;">Dept of Education Case Study</h3>
-            <form method="get" action="https://tjohnshoy.github.io//DoEdCaseStudy.html"><button type="submit">Learn More</button></form>
-        </div> 
-    </div>           
+        /* Loading Screen */
+        .loading-screen {
+            min-height: 100vh;
+            background: var(--background);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    <div class="container mainLayout">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>My Skills</h2>
+        .spinner {
+            width: 2rem;
+            height: 2rem;
+            border: 2px solid transparent;
+            border-bottom-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Passcode Screen */
+        .passcode-screen {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .passcode-card {
+            width: 100%;
+            max-width: 28rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border-radius: var(--radius);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border: none;
+            padding: 2rem 1rem;
+        }
+
+        .passcode-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .shield-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        .shield-icon svg {
+            width: 1.75rem;
+            height: 1.75rem;
+            color: var(--primary-foreground);
+        }
+
+        .passcode-title {
+            font-size: 1.5rem;
+            font-weight: var(--font-weight-medium);
+            margin-bottom: 0.5rem;
+        }
+
+        .passcode-description {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+        }
+
+        /* OTP Input */
+        .otp-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .otp-input {
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: var(--font-weight-medium);
+            background: var(--input-background);
+            transition: all 0.2s;
+        }
+
+        .otp-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(3, 2, 19, 0.1);
+        }
+
+        .otp-input:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Alert */
+        .alert {
+            padding: 0.75rem 1rem;
+            border-radius: 0.375rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--destructive);
+            background: rgba(212, 24, 61, 0.05);
+            color: var(--destructive);
+            font-size: 0.875rem;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: var(--font-weight-medium);
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--primary-foreground);
+            height: 2.75rem;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            opacity: 0.9;
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--foreground);
+            border: 1px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            background: var(--accent);
+        }
+
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--muted-foreground);
+            padding: 0 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            min-height: 100vh;
+            background: var(--background);
+            padding: 1rem;
+        }
+
+        .content-container {
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .header-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: var(--primary);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: var(--primary-foreground);
+        }
+
+        .header-text h1 {
+            margin-bottom: 0.25rem;
+        }
+
+        .header-text p {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+        }
+
+        /* Card */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header {
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: var(--font-weight-medium);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-description {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.25rem 0.75rem;
+            background: var(--secondary);
+            color: var(--secondary-foreground);
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: var(--font-weight-medium);
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .badge svg {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        /* Session Info */
+        .session-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        /* Toast */
+        .toast-container {
+            position: fixed;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        .toast {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 2.5rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            font-size: 0.875rem;
+            font-weight: var(--font-weight-medium);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s ease;
+            pointer-events: auto;
+            min-width: auto;
+            max-width: none;
+            width: fit-content;
+            text-align: center;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .toast.success {
+            color: #16a34a;
+            border-color: #16a34a;
+        }
+
+        .toast svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 640px) {
+            .passcode-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .shield-icon {
+                width: 4rem;
+                height: 4rem;
+            }
+
+            .shield-icon svg {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .otp-container {
+                gap: 0.75rem;
+            }
+
+            .otp-input {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .btn-primary {
+                height: 2.5rem;
+            }
+
+            .main-content {
+                padding: 1.5rem;
+            }
+
+            .content-container {
+                margin-bottom: 2rem;
+            }
+
+            .header {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .session-info {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .content-grid {
+                gap: 1.5rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .content-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Passcode Screen -->
+    <div id="passcode-screen" class="passcode-screen hidden">
+        <div class="passcode-card">
+            <div class="passcode-header space-y-4">
+                <div class="shield-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="passcode-title">Access Required</h1>
+                    <p class="passcode-description">Please enter the passcode to continue</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="otp-container">
+                    <input type="text" class="otp-input" maxlength="1" data-index="0">
+                    <input type="text" class="otp-input" maxlength="1" data-index="1">
+                    <input type="text" class="otp-input" maxlength="1" data-index="2">
+                    <input type="text" class="otp-input" maxlength="1" data-index="3">
+                    <input type="text" class="otp-input" maxlength="1" data-index="4">
+                    <input type="text" class="otp-input" maxlength="1" data-index="5">
+                </div>
+
+                <div id="error-alert" class="alert hidden">
+                    <span id="error-message"></span>
+                </div>
+
+                <button id="submit-btn" class="btn btn-primary w-full" disabled>
+                    Enter
+                </button>
+
+                <div class="contact-info">
+                    <p>
+                        No passcode? 
+                        <a href="mailto:tena.johnshoy@gmail.com?subject=Portfolio%20Passcode%20Request%20-%20Tena%20Johnshoy%20Barasa">
+                            Contact me
+                        </a> 
+                        for access.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container mainLayout" >
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top"  src="images\Home\undraw_static_website_0107.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">Front-end Development</h4>
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <div class="content-container space-y-6">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-content">
+                    <div class="header-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <div class="header-text">
+                        <h1>Secure Portal</h1>
+                        <p>Welcome to the protected area</p>
+                    </div>
+                </div>
+                
+                <button id="logout-btn" class="btn btn-outline gap-2">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                    </svg>
+                    Logout
+                </button>
+            </div>
+
+            <!-- Session Info -->
+            <div class="card">
+                <div class="session-info">
+                    <div class="space-y-1">
+                        <p>Your session is active</p>
+                        <p class="card-description">
+                            Access will automatically expire after 24 hours from authentication
+                        </p>
+                    </div>
+                    <div class="badge">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>Expires in: <span id="time-remaining">Loading...</span></span>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top"  src="images\Home\undraw_destinations_fpv7.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">Journey Mapping & Storyboarding</h4>
+
+            <!-- Content Area -->
+            <div class="content-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Protected Content</h2>
+                        <p class="card-description">
+                            This content is only visible to authenticated users
+                        </p>
+                    </div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top"  src="images\Home\undraw_composition_re_4o4o.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">Material Design</h4>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Secure Information</h2>
+                        <p class="card-description">
+                            Confidential data and resources
+                        </p>
+                    </div>
+                    <p class="card-description">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                        proident, sunt in culpa qui officia deserunt.
+                    </p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top" src="images\Home\undraw_split_testing_l1uw.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">Product Testing</h4>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Dashboard</h2>
+                        <p class="card-description">
+                            Analytics and monitoring tools
+                        </p>
+                    </div>
+                    <p class="card-description">
+                        Mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus 
+                        error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                    </p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top"  src="images\Home\userInterface.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">Prototyping</h4>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top" src="images\Home\programs.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">Prototyping Software</h4>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top"  src="images\Home\undraw_hire_re_gn5j.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">Research & Persona Development</h4>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top"  src="images\Home\undraw_redesign_feedback_re_jvm0.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">UI & Graphic Design</h4>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="card-img-top"  src="images\Home\undraw_design_sprint_re_tke3.svg" alt="Card image cap">
-                <div class="card-body flex-column d-flex">
-                    <h4 class="card-title mt-4 text-center">Wireframing</h4>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Settings</h2>
+                        <p class="card-description">
+                            Configuration and preferences
+                        </p>
+                    </div>
+                    <p class="card-description">
+                        Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+                        vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="footer">
-        <ul class="inlineFlex">
-            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/index.html" class="linkstyle">home</a></li>
-            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/about.html" class="linkstyle">about</a></li>
-            <li ><a style="text-decoration: none;" href="https://tjohnshoy.github.io/contact.html" class="linkstyle">contact</a></li>
-        </ul>
-    </footer>
+    <script>
+        // Configuration
+        const VALID_PASSCODE = '123456'; // Change this to your desired passcode
+        //const TWENTY_FOUR_HOURS = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+        const TWENTY_FOUR_HOURS = 5 * 1 * 1 * 100; // 24 hours in milliseconds
+
+        // State management
+        let isAuthenticated = false;
+        let isLoading = true;
+        let passcode = '';
+
+        // DOM elements
+        const loadingScreen = document.getElementById('loading-screen');
+        const passcodeScreen = document.getElementById('passcode-screen');
+        const mainContent = document.getElementById('main-content');
+        const otpInputs = document.querySelectorAll('.otp-input');
+        const submitBtn = document.getElementById('submit-btn');
+        const errorAlert = document.getElementById('error-alert');
+        const errorMessage = document.getElementById('error-message');
+        const logoutBtn = document.getElementById('logout-btn');
+        const timeRemainingSpan = document.getElementById('time-remaining');
+        const toastContainer = document.getElementById('toast-container');
+
+        // Toast notification system
+        function showToast(message, type = 'default', duration = 2000) {
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            
+            let icon = '';
+            if (type === 'success') {
+                icon = `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>`;
+            }
+            
+            toast.innerHTML = `${icon}${message}`;
+            toastContainer.appendChild(toast);
+            
+            // Show toast
+            setTimeout(() => toast.classList.add('show'), 100);
+            
+            // Hide and remove toast
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toastContainer.removeChild(toast), 300);
+            }, duration);
+        }
+
+        // Authentication functions
+        function checkAuthentication() {
+            try {
+                const authTimestamp = localStorage.getItem('auth_timestamp');
+                const isAuth = localStorage.getItem('is_authenticated');
+                
+                if (authTimestamp && isAuth === 'true') {
+                    const authTime = parseInt(authTimestamp);
+                    const now = new Date().getTime();
+                    const timeElapsed = now - authTime;
+                    
+                    if (timeElapsed < TWENTY_FOUR_HOURS) {
+                        setAuthenticated(true);
+                        return;
+                    } else {
+                        // Clear expired authentication
+                        localStorage.removeItem('auth_timestamp');
+                        localStorage.removeItem('is_authenticated');
+                    }
+                }
+            } catch (error) {
+                console.error('Error accessing localStorage:', error);
+            }
+            
+            setAuthenticated(false);
+        }
+
+        function setAuthenticated(authenticated) {
+            isAuthenticated = authenticated;
+            updateUI();
+            if (authenticated) {
+                updateTimeRemaining();
+                setInterval(updateTimeRemaining, 60000); // Update every minute
+            }
+        }
+
+        function updateUI() {
+            loadingScreen.classList.add('hidden');
+            
+            if (isAuthenticated) {
+                passcodeScreen.classList.add('hidden');
+                mainContent.classList.remove('hidden');
+            } else {
+                passcodeScreen.classList.remove('hidden');
+                mainContent.classList.add('hidden');
+            }
+        }
+
+        function updateTimeRemaining() {
+            try {
+                const authTimestamp = localStorage.getItem('auth_timestamp');
+                if (!authTimestamp) {
+                    timeRemainingSpan.textContent = '0 hours';
+                    return;
+                }
+                
+                const authTime = parseInt(authTimestamp);
+                const now = new Date().getTime();
+                const timeElapsed = now - authTime;
+                const timeRemaining = TWENTY_FOUR_HOURS - timeElapsed;
+                
+                if (timeRemaining <= 0) {
+                    timeRemainingSpan.textContent = '0 hours';
+                    handleLogout();
+                    return;
+                }
+                
+                const hoursRemaining = Math.floor(timeRemaining / (60 * 60 * 1000));
+                const minutesRemaining = Math.floor((timeRemaining % (60 * 60 * 1000)) / (60 * 1000));
+                
+                if (hoursRemaining > 0) {
+                    timeRemainingSpan.textContent = `${hoursRemaining}h ${minutesRemaining}m`;
+                } else {
+                    timeRemainingSpan.textContent = `${minutesRemaining}m`;
+                }
+            } catch (error) {
+                console.error('Error accessing localStorage:', error);
+                timeRemainingSpan.textContent = 'Unknown';
+            }
+        }
+
+        // Passcode input handling
+        function updatePasscode() {
+            passcode = '';
+            otpInputs.forEach(input => {
+                passcode += input.value;
+            });
+            
+            submitBtn.disabled = passcode.length !== 6 || isLoading;
+        }
+
+        function clearPasscode() {
+            passcode = '';
+            otpInputs.forEach(input => {
+                input.value = '';
+            });
+            updatePasscode();
+        }
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorAlert.classList.remove('hidden');
+        }
+
+        function hideError() {
+            errorAlert.classList.add('hidden');
+        }
+
+        async function handleSubmit() {
+            if (passcode.length !== 6) {
+                showError('Passcode must be 6 digits');
+                return;
+            }
+
+            isLoading = true;
+            submitBtn.textContent = 'Verifying...';
+            submitBtn.disabled = true;
+            hideError();
+
+            // Simulate authentication delay
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            if (passcode === VALID_PASSCODE) {
+                try {
+                    // Store authentication timestamp
+                    const now = new Date().getTime();
+                    localStorage.setItem('auth_timestamp', now.toString());
+                    localStorage.setItem('is_authenticated', 'true');
+                    
+                    // Show success toast
+                    showToast('Access Granted', 'success', 2000);
+                    
+                    // Delay navigation slightly to allow toast to show, then redirect
+                    setTimeout(() => {
+                        // Replace with your desired redirect URL
+                        window.location.href = 'https://tjohnshoy.github.io/'; // Change this to your target URL
+                    }, 300);
+                } catch (error) {
+                    console.error('Error accessing localStorage:', error);
+                    // Still redirect even if localStorage fails
+                    setTimeout(() => {
+                        window.location.href = 'https://tjohnshoy.github.io/'; // Change this to your target URL
+                    }, 300);
+                }
+            } else {
+                showError('Invalid passcode. Please try again.');
+                clearPasscode();
+                otpInputs[0].focus();
+            }
+
+            isLoading = false;
+            submitBtn.textContent = 'Enter';
+            updatePasscode();
+        }
+
+        function handleLogout() {
+            try {
+                localStorage.removeItem('auth_timestamp');
+                localStorage.removeItem('is_authenticated');
+            } catch (error) {
+                console.error('Error accessing localStorage:', error);
+            }
+            setAuthenticated(false);
+            clearPasscode();
+            hideError();
+            otpInputs[0].focus();
+        }
+
+        // Event listeners
+        otpInputs.forEach((input, index) => {
+            input.addEventListener('input', (e) => {
+                const value = e.target.value;
+                
+                // Only allow digits
+                if (!/^\d*$/.test(value)) {
+                    e.target.value = '';
+                    return;
+                }
+                
+                updatePasscode();
+                hideError();
+                
+                // Move to next input if filled
+                if (value && index < otpInputs.length - 1) {
+                    otpInputs[index + 1].focus();
+                }
+            });
+            
+            input.addEventListener('keydown', (e) => {
+                // Handle backspace
+                if (e.key === 'Backspace' && !e.target.value && index > 0) {
+                    otpInputs[index - 1].focus();
+                }
+                
+                // Handle enter key
+                if (e.key === 'Enter' && passcode.length === 6) {
+                    handleSubmit();
+                }
+                
+                // Handle paste
+                if (e.key === 'v' && (e.ctrlKey || e.metaKey)) {
+                    e.preventDefault();
+                    navigator.clipboard.readText().then(text => {
+                        const digits = text.replace(/\D/g, '').slice(0, 6);
+                        if (digits.length === 6) {
+                            otpInputs.forEach((input, i) => {
+                                input.value = digits[i] || '';
+                            });
+                            updatePasscode();
+                            hideError();
+                        }
+                    });
+                }
+            });
+        });
+
+        submitBtn.addEventListener('click', handleSubmit);
+        logoutBtn.addEventListener('click', handleLogout);
+
+        // Initialize app
+        function init() {
+            setTimeout(() => {
+                checkAuthentication();
+                if (!isAuthenticated) {
+                    otpInputs[0].focus();
+                }
+            }, 500);
+        }
+
+        init();
+    </script>
 </body>
-<script src= "https://code.jquery.com/jquery-3.3.1.min.js"></script> 
-<script src= "js/index.js"></script>
-<script src= "bootstrap.bundle.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
-
 </html>

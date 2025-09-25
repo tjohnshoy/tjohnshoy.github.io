@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N18ZF9GP8T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N18ZF9GP8T');
+</script>
+   <meta property="og:title" content="Tena Johnshoy Barasa Portfolio" />
+<meta property="og:description" content="UX/UI Designer" />
+<meta property="og:url" content="https://tjohnshoy.github.io/" />
+<meta property="og:image" content="https://tjohnshoy.github.io/images/DeptOfEd/desktopView.png" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/png" href="images\logo.svg"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css\homeflex.css" rel="stylesheet" type="text/css">
+    <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    import { useState } from 'react';
+    <link href="Passcode Authentication Screen\src\components\ui\input-otp.tsx">
+    <link href="Passcode Authentication Screen\src\components\ui\card.tsx">
+    <link href="Passcode Authentication Screen\src\components\ui\alert.tsx">
+    <link href="Passcode Authentication Screen\src\components\ui\sonner.tsx">
+    <script src="passcodeauthenticationscreen\package.json"></script>
+    
+    
+    interface PasscodeScreenProps {
+        onAuthenticated: () => void;
+      }
+      
+      export function PasscodeScreen({ onAuthenticated }: PasscodeScreenProps) {
+        const [passcode, setPasscode] = useState('');
+        const [error, setError] = useState('');
+        const [isLoading, setIsLoading] = useState(false);
+      
+        // You can set your desired passcode here
+        const VALID_PASSCODE = '123456'; // Change this to your desired passcode
+      
+        const handleSubmit = async () => {
+          if (passcode.length !== 6) {
+            setError('Passcode must be 6 digits');
+            return;
+          }
+      
+          setIsLoading(true);
+          setError('');
+      
+          // Simulate authentication delay
+          await new Promise(resolve => setTimeout(resolve, 500));
+      
+          if (passcode === VALID_PASSCODE) {
+            try {
+              // Store authentication timestamp
+              const now = new Date().getTime();
+              localStorage.setItem('auth_timestamp', now.toString());
+              localStorage.setItem('is_authenticated', 'true');
+              
+              // Show success toast
+              toast.success('Access Granted', {
+                icon: <CheckCircle className="w-4 h-4 text-green-500" />,
+                duration: 2000,
+              });
+              
+              // Delay navigation slightly to allow toast to show
+              setTimeout(() => {
+                onAuthenticated();
+              }, 300);
+            } catch (error) {
+              console.error('Error accessing localStorage:', error);
+              // Still allow authentication even if localStorage fails
+              onAuthenticated();
+            }
+          } else {
+            setError('Invalid passcode. Please try again.');
+            setPasscode('');
+          }
+      
+          setIsLoading(false);
+        };
+      
+        const handlePasscodeChange = (value: string) => {
+          setPasscode(value);
+          setError('');
+        };
+      
+        const handleKeyPress = (e: React.KeyboardEvent) => {
+          if (e.key === 'Enter' && passcode.length === 6) {
+            handleSubmit();
+          }
+        };
+</head>
+
+
+
+
+
+ <body>
+
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center px-4 py-8">
+      <Card className="w-full max-w-md shadow-xl border-0 bg-white/80 backdrop-blur-sm">
+        <CardHeader className="text-center space-y-4 pb-6 sm:pb-8">
+          <div className="mx-auto w-14 h-14 sm:w-16 sm:h-16 bg-primary rounded-full flex items-center justify-center">
+            <Shield className="w-7 h-7 sm:w-8 sm:h-8 text-primary-foreground" />
+          </div>
+          <div>
+            <CardTitle className="flex items-center justify-center">
+              Access Required
+            </CardTitle>
+            <CardDescription className="mt-2">
+              Please enter the passcode to continue
+            </CardDescription>
+          </div>
+        </CardHeader>
+
+        <CardContent className="space-y-4 sm:space-y-6 px-4 sm:px-6">
+          <div className="space-y-4">
+            <div className="flex justify-center">
+              <InputOTP
+                maxLength={6}
+                value={passcode}
+                onChange={handlePasscodeChange}
+                onKeyDown={handleKeyPress}
+                disabled={isLoading}
+                className="gap-2 sm:gap-3"
+              >
+                <InputOTPGroup className="gap-2 sm:gap-3">
+                  <InputOTPSlot index={0} className="w-10 h-10 sm:w-12 sm:h-12 rounded" />
+                  <InputOTPSlot index={1} className="w-10 h-10 sm:w-12 sm:h-12 rounded" />
+                  <InputOTPSlot index={2} className="w-10 h-10 sm:w-12 sm:h-12 rounded" />
+                  <InputOTPSlot index={3} className="w-10 h-10 sm:w-12 sm:h-12 rounded" />
+                  <InputOTPSlot index={4} className="w-10 h-10 sm:w-12 sm:h-12 rounded" />
+                  <InputOTPSlot index={5} className="w-10 h-10 sm:w-12 sm:h-12 rounded" />
+                </InputOTPGroup>
+              </InputOTP>
+            </div>
+          </div>
+
+          {error && (
+            <Alert variant="destructive">
+              <AlertDescription>{error}</AlertDescription>
+            </Alert>
+          )}
+
+          <Button
+            onClick={handleSubmit}
+            disabled={passcode.length !== 6 || isLoading}
+            className="w-full h-11 sm:h-10"
+          >
+            {isLoading ? 'Verifying...' : 'Enter'}
+          </Button>
+
+          <div className="text-center text-xs text-muted-foreground px-2">
+            <p>
+              No passcode?{' '}
+              <a 
+                href="mailto:tena.johnshoy@gmail.com?subject=Portfolio%20Passcode%20Request%20-%20Tena%20Johnshoy%20Barasa" 
+                className="text-primary hover:underline"
+              >
+                Contact me
+              </a>{' '}
+              for access.
+            </p>
+          </div>
+
+        </CardContent>
+      </Card>
+    </div>
+    </body>
+
+}
+</html>
